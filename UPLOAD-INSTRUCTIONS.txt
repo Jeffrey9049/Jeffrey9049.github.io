@@ -1,0 +1,34 @@
+JEFFREY9049 ACADEMIC WEBSITE — SETUP
+
+Live site: https://jeffrey9049.github.io/
+Repository: https://github.com/Jeffrey9049/Jeffrey9049.github.io
+
+The website contains:
+- index.html          Home
+- research.html       Network optimization research and publications
+- sign-language.html  Taiwan Sign Language AI research
+- styles.css          Shared responsive styles
+- script.js           Dark/light theme and mobile navigation
+
+DEPLOY TO GITHUB PAGES (using GitHub's website)
+1. Unzip this archive.
+2. Open the existing Jeffrey9049.github.io repository.
+3. Click Add file > Upload files.
+4. Drag these FIVE files into the upload area:
+   index.html, research.html, sign-language.html, styles.css, script.js
+   (Don't upload the ZIP itself.)
+5. Commit the changes to main. Confirm replacing index.html when asked.
+6. The existing Pages setup 'Deploy from a branch' / 'main' / '/(root)'
+   should continue working without modification.
+7. Wait for the Pages build to finish in Actions, then reload the live URL.
+
+IMPORTANT
+- Do not delete README.md. It is fine to keep it.
+- Do not upload your private datasets, unpublished source code, or student videos.
+- The publication titles are included without fabricated DOI links.
+- Add your CV, email and a profile portrait after verifying what should be public.
+- For easiest editing, each page is a separate HTML file; all shared styles
+  live in styles.css.
+
+Local preview: open index.html in a browser. For the most accurate preview,
+use any basic local static file server (for example Python http.server).
