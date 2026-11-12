@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Taiwan Sign Language research, corpus analysis, machine learning, and AI education by Lan-jun Jeffrey Chang.">
+  <meta name="description" content="Research in Taiwan Sign Language, accessible AI tools, and interdisciplinary collaboration by Lan-jun Jeffrey Chang.">
   <meta name="theme-color" content="#ffffff">
   <title>Sign Language | Lan-jun Jeffrey Chang</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -24,16 +24,40 @@
   </header>
   <main id="main" class="container">
 <section class="page-intro">
-<h1>Sign Language</h1>
-<p class="summary">I work on computational methods for Taiwan Sign Language (TSL), combining motion-based representations with linguistic annotations for recognition and corpus analysis.</p>
+  <h1>Sign Language</h1>
+  <p class="summary">Taiwan Sign Language research, multimodal machine learning, and accessible tools for language researchers and educators.</p>
+</section>
+<section class="content-section mission-section">
+  <h2>Motivation</h2>
+  <p>My work aims to bridge the gap between sign language expertise and artificial intelligence. Sign language researchers and practitioners often have deep linguistic knowledge but may not have the programming background or technical resources needed to use machine learning systems. Conversely, AI developers may be unfamiliar with the linguistic and cultural knowledge essential to working responsibly with sign languages.</p>
+  <p>I seek to connect these fields by developing approachable tools and research workflows that help sign language specialists, educators, and members of signing communities work with technology. My goal is not only to improve computational methods for sign language research, but also to make those methods more accessible to people without programming experience.</p>
 </section>
 <figure class="teaching-photo">
-<img alt="Teaching a hands-on machine learning and AI session for Taiwan Sign Language research, with participants and projected software demonstrations" decoding="async" height="1152" loading="eager" src="tsl-ml-teaching.png" width="1536"/>
-<figcaption>Hands-on ML/AI instruction for Taiwan Sign Language research at National Chung Cheng University.</figcaption>
+  <img alt="Hands-on teaching session introducing machine learning tools for sign language research, with a software demonstration on two screens" decoding="async" height="1152" loading="eager" src="tsl-ml-teaching.png" width="1536">
+  <figcaption>Hands-on instruction in machine learning and AI tools for Taiwan Sign Language research at National Chung Cheng University.</figcaption>
 </figure>
+<section class="content-section software-section" id="software">
+  <h2>Software Tools</h2>
+  <p>Alongside my research, I develop practical software to lower the technical barriers to sign language data collection and analysis. These tools are intended to make common research tasks approachable for people with limited programming experience.</p>
+  <div class="software-grid">
+    <article class="software-item">
+      <h3>Landmark Studio</h3>
+      <p>A visual interface for extracting motion landmarks from videos. Users can select the tracking components they need, such as hands, body pose, or face landmarks, and export structured data for further analysis without writing code.</p>
+      <!-- Replace the disabled span below with a real <a href="YOUR_DOWNLOAD_URL" class="download-link">Download for Windows</a> after publishing the installer. -->
+      <span class="download-unavailable" aria-label="Landmark Studio download not yet available">Windows download — coming soon</span>
+    </article>
+    <article class="software-item">
+      <h3>Sign Language ML Studio</h3>
+      <p>A beginner-friendly desktop environment for exploring machine learning with sign language examples. It is designed to help researchers and students prepare labeled data and try recognition workflows without having to build a machine learning pipeline from scratch.</p>
+      <!-- Replace the disabled span below with a real <a href="YOUR_DOWNLOAD_URL" class="download-link">Download for Windows</a> after publishing the installer. -->
+      <span class="download-unavailable" aria-label="Sign Language ML Studio download not yet available">Windows download — coming soon</span>
+    </article>
+  </div>
+  <p class="software-note">Download packages and version details will be provided here when the software releases are ready.</p>
+</section>
 <section class="content-section">
 <h2>Research Overview</h2>
-<p>Sign-language understanding requires information about handshape, palm orientation, location, movement, and temporal context. My research considers how these visual and linguistic dimensions can be represented and used in data-driven models, particularly when labeled datasets are limited.</p>
+<p>Sign-language understanding requires information about handshape, palm orientation, location, movement, and temporal context. My research examines how these visual and linguistic dimensions can be represented in data-driven recognition models and how captured motion can be used for avatar-based reconstruction and visualization.</p>
 <p>At the Graduate Institute of Linguistics, National Chung Cheng University, I contribute to multimodal corpus processing and machine-learning-based annotation and recognition workflows.</p>
 </section>
 <section class="content-section">
@@ -42,6 +66,13 @@
 <h3>Landmark-Based Sign Recognition</h3>
 <p>We extract body and hand landmarks from recorded signing and use temporal sequence models to recognize signed lexical items. Existing offline experiments use a bidirectional GRU and compare landmark-only representations with approaches incorporating aligned ELAN linguistic information.</p>
 <p class="project-keywords">MediaPipe · Spatiotemporal landmarks · Bidirectional GRU · PyTorch</p>
+</div>
+<div class="project" id="avatar-modeling">
+<h3>Sign Language Avatar Modeling and Motion Reconstruction</h3>
+<p>I am developing an experimental workflow for reconstructing sign language movements from video and landmark data and transferring them to an articulated digital character. This work explores front-view avatar animation using body pose, hand landmarks, and motion-retargeting methods, including 2.5D and 3D representations.</p>
+<p>A central challenge is preserving the linguistic details of signing: accurate handshapes, finger articulation, palm orientation, coordinated movements, and the relative depth of overlapping hands. The longer-term aim is to support visual demonstrations and accessible educational materials, while studying how faithfully digital avatars can represent recorded signing.</p>
+<p class="project-keywords">Human pose estimation · Hand tracking · Motion retargeting · 2.5D/3D avatars</p>
+<p class="project-status">Status: Ongoing research and prototype development.</p>
 </div>
 <div class="project">
 <h3>Linguistically Informed Modeling</h3>
