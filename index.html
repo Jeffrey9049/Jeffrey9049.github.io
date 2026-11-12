@@ -3,148 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Academic website of Lan-jun Jeffrey Chang, featuring network optimization research, IEEE publications, and Taiwan Sign Language AI projects.">
-  <meta name="theme-color" content="#f9faf8">
-  <title>Lan-jun Jeffrey Chang | Researcher</title>
+  <meta name="description" content="Personal academic website of Lan-jun Jeffrey Chang. Communications engineering, network optimization, Taiwan Sign Language research, and IEEE publications.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Home | Lan-jun Jeffrey Chang</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Lan-jun Jeffrey Chang — home">
-        <span class="brand-mark">JC.</span>
-        <span class="brand-text"><strong>Lan-jun Jeffrey Chang</strong><small>Research & Engineering</small></span>
-      </a>
-      <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+      <a class="site-name" href="index.html">Lan-jun Jeffrey Chang</a>
+      <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="research.html">Network Research</a>
-        <a href="sign-language.html">Sign Language AI</a>
-        <a href="research.html#publications">Publications</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="sign-language.html">Sign Language</a>
       </nav>
-      <div class="header-controls">
-        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">◐</button>
-        <button class="icon-button mobile-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
-      </div>
     </div>
   </header>
-
-  <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow eyebrow-line" style="margin-bottom:22px">Communications · Optimization · AI</div>
-          <h1>Engineering <span class="serif">connections.</span><br>Advancing understanding.</h1>
-          <p class="lead">I'm <strong style="color:var(--ink)">Lan-jun Jeffrey Chang</strong>, a researcher with a background in communications engineering. My work spans robust network optimization and machine learning for Taiwan Sign Language.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="research.html">Explore my research <span class="arrow" aria-hidden="true">↗</span></a>
-            <a class="btn btn-outline" href="sign-language.html">Sign Language AI <span class="arrow" aria-hidden="true">→</span></a>
-          </div>
-          <div class="meta-row">
-            <span><i class="meta-dot" aria-hidden="true"></i> M.S., Communications Engineering</span>
-            <span>National Chung Cheng University, Taiwan</span>
-          </div>
+  <main id="main" class="container">
+    <section class="home-intro" aria-labelledby="person-name">
+      <figure class="portrait">
+        <img src="profile.jpg" alt="Portrait of Lan-jun Jeffrey Chang" loading="eager"
+          onerror="this.onerror=null;this.src='portrait-placeholder.svg';this.alt='Placeholder for profile photograph'">
+        <figcaption>Researcher · National Chung Cheng University</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">Academic profile</p>
+        <h1 id="person-name">Lan-jun Jeffrey Chang</h1>
+        <p class="subtitle">Communications Engineering · Network Optimization · Multimodal Machine Learning</p>
+        <div class="bio">
+          <p>I am a researcher in communications engineering with interests in network optimization and multimodal machine learning. I received my M.S. in Communications Engineering from National Chung Cheng University, Taiwan. My research examines robust routing under uncertain traffic demands and network capacities, as well as computational approaches to Taiwan Sign Language.</p>
+          <p>I currently work as a research assistant at the Graduate Institute of Linguistics, National Chung Cheng University, contributing to Taiwan Sign Language corpus processing and machine-learning research.</p>
         </div>
-        <div class="hero-figure" aria-hidden="true">
-          <div class="visual-card">
-            <svg class="net-art" viewBox="0 0 420 360" role="presentation">
-              <defs>
-                <linearGradient id="netGrad" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#3c9b95"/><stop offset="1" stop-color="#8baddb"/></linearGradient>
-                <pattern id="dotGrid" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="currentColor" opacity=".12"/></pattern>
-              </defs>
-              <rect x="0" y="0" width="420" height="360" fill="url(#dotGrid)" />
-              <g fill="none" stroke="url(#netGrad)" stroke-width="2.4" opacity=".8">
-                <path d="M48 240L128 145L235 188L325 90L373 225L245 292L128 145L76 68L235 188L245 292L48 240M325 90L235 188L373 225"/>
-                <path d="M76 68L210 57L325 90M210 57L235 188" stroke-dasharray="7 9" opacity=".65"/>
-              </g>
-              <g fill="#f9faf8" stroke="#248079" stroke-width="3">
-                <circle cx="48" cy="240" r="10"/><circle cx="76" cy="68" r="10"/><circle cx="128" cy="145" r="13"/>
-                <circle cx="210" cy="57" r="9"/><circle cx="235" cy="188" r="17"/><circle cx="325" cy="90" r="12"/>
-                <circle cx="373" cy="225" r="10"/><circle cx="245" cy="292" r="12"/>
-              </g>
-              <circle cx="235" cy="188" r="34" fill="#198478" opacity=".12"/>
-              <circle cx="235" cy="188" r="51" fill="none" stroke="#198478" stroke-width="1.5" stroke-dasharray="4 7" opacity=".48"/>
-            </svg>
-            <div class="art-caption"><span>Research network</span><span>Network + Intelligence</span></div>
-          </div>
-          <div class="floating-note"><strong>Two research tracks</strong>Networks & human communication</div>
+        <div class="academic-links">
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="sign-language.html">Sign Language</a>
+          <a href="https://github.com/Jeffrey9049" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted" id="research-areas">
-      <div class="container">
-        <div class="section-head">
-          <div><span class="eyebrow">Areas of focus</span><h2>Two directions.<br>One curiosity.</h2></div>
-          <p>From mathematical optimization of communication networks to multimodal understanding of human language, I work at the intersection of systems and intelligence.</p>
-        </div>
-        <div class="cards-2">
-          <a class="feature-card" href="research.html">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6.8 7.1 10.8 16M17.3 6.4 13 16.5M7 6h10"/></svg></div>
-            <span class="overline">01 / Communications engineering</span>
-            <h3>Network Optimization</h3>
-            <p>Robust routing, uncertainty-aware traffic engineering, network capacity planning, and efficient resource allocation.</p>
-            <div class="tags"><span class="tag">Robust optimization</span><span class="tag">Routing</span><span class="tag">Networking</span></div>
-            <span class="card-arrow">View network research ↗</span>
-          </a>
-          <a class="feature-card" href="sign-language.html">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12V6a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v5-3a1.5 1.5 0 0 1 3 0v6c0 5-3 7-8 7-3 0-5.5-2-6.5-5L3 12a1.5 1.5 0 0 1 2-2Z"/></svg></div>
-            <span class="overline">02 / Multimodal machine learning</span>
-            <h3>Taiwan Sign Language AI</h3>
-            <p>Landmark-based sign recognition, linguistically informed model training, and analysis of multimodal sign-language data.</p>
-            <div class="tags"><span class="tag">PyTorch</span><span class="tag">MediaPipe</span><span class="tag">ELAN</span></div>
-            <span class="card-arrow">View sign language work ↗</span>
-          </a>
-        </div>
-      </div>
+    <section class="section" aria-labelledby="interests-title">
+      <div class="section-title"><h2 id="interests-title">Research Interests</h2></div>
+      <ul class="interests">
+        <li>Network optimization and traffic engineering</li>
+        <li>Robust and oblivious routing</li>
+        <li>Resource allocation in communication networks</li>
+        <li>Multimodal learning and sign-language recognition</li>
+      </ul>
     </section>
 
-    <section class="section" id="selected-publications">
-      <div class="container">
-        <div class="section-head">
-          <div><span class="eyebrow">Selected publications</span><h2>Published research.</h2></div>
-          <a class="text-link" href="research.html#publications">See publication details ↗</a>
-        </div>
-        <div class="list-row">
-          <div class="list-meta">2026 · IEEE TNSM</div>
-          <div><h3>Oblivious Routing for Networks With Dual Uncertainties in Demand and Capacity</h3><p>Robust routing under uncertain traffic demand and link capacity.</p></div>
-        </div>
-        <div class="list-row">
-          <div class="list-meta">2026 · IEEE TNSM</div>
-          <div><h3>Modeling and Optimization Algorithm for Capacity Planning in Hose Model VPN Networks</h3><p>Optimization of network capacity under hose-model demand constraints.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-muted">
-      <div class="container split">
+    <section class="section" aria-labelledby="experience-title">
+      <div class="section-title"><h2 id="experience-title">Experience and Education</h2></div>
+      <div class="experience-grid">
         <div>
-          <span class="eyebrow">About me</span>
-          <h2>Research shaped by both theory and practice.</h2>
-          <div class="mini-rule"></div>
-          <p class="lead">I received my M.S. in Communications Engineering from National Chung Cheng University in Taiwan. My interests include optimization for communication systems, AI-assisted networking, and multimodal learning.</p>
+          <h3>Research and Teaching</h3>
+          <div class="entry"><div class="date">2025–Present</div><div><h3>Research Assistant</h3><p>Graduate Institute of Linguistics<br>National Chung Cheng University</p></div></div>
+          <div class="entry"><div class="date">2023–2024</div><div><h3>Teaching Assistant</h3><p>Design and Planning of Data Networks<br>National Chung Cheng University</p></div></div>
         </div>
-        <div class="content-card">
-          <span class="overline">What I work with</span>
-          <div class="tags" style="margin:0 0 24px"><span class="tag muted">Mathematical optimization</span><span class="tag muted">Linear programming</span><span class="tag muted">Python</span><span class="tag muted">PyTorch</span><span class="tag muted">MediaPipe</span><span class="tag muted">Multimodal datasets</span></div>
-          <h3>Explore my work</h3>
-          <p>Browse research summaries, publications, and current projects. This site will grow as additional work becomes public.</p>
-          <a class="text-link" href="sign-language.html">Visit my Sign Language AI research ↗</a>
+        <div>
+          <h3>Education</h3>
+          <div class="entry"><div class="date">2023–2025</div><div><h3>M.S. in Communications Engineering</h3><p>National Chung Cheng University, Taiwan</p></div></div>
+          <div class="entry"><div class="date">2019–2023</div><div><h3>B.S. in Communications</h3><p>National Chung Cheng University, Taiwan</p></div></div>
         </div>
       </div>
+    </section>
+
+    <section class="section" aria-labelledby="pub-title">
+      <div class="section-title"><h2 id="pub-title">Selected Publications</h2></div>
+      <div class="paper">
+        <div class="paper-year">2026</div>
+        <div><h3><a href="https://doi.org/10.1109/TNSM.2026.3727815" target="_blank" rel="noopener noreferrer">Oblivious Routing for Networks With Dual Uncertainties in Demand and Capacity</a></h3>
+        <p><strong>Lan-Jun Jeffrey Chang</strong>, Hsuan-Ying Ashely Li, and Steven S. W. Lee</p>
+        <p class="journal">IEEE Transactions on Network and Service Management, vol. 23, pp. 7127–7140.</p></div>
+      </div>
+      <div class="paper">
+        <div class="paper-year">2026</div>
+        <div><h3><a href="https://doi.org/10.1109/TNSM.2026.3694390" target="_blank" rel="noopener noreferrer">Modeling and Optimization Algorithm for Capacity Planning in Hose Model VPN Networks</a></h3>
+        <p>Ashely Li, <strong>Jeffrey Chang</strong>, and Steven S. W. Lee</p>
+        <p class="journal">IEEE Transactions on Network and Service Management, vol. 23, pp. 4926–4936.</p></div>
+      </div>
+      <a class="text-link" href="publications.html">Full publication list →</a>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div><h2>Let's connect through research.</h2><p>Lan-jun Jeffrey Chang · Communications Engineering & AI</p><a class="text-link" href="https://github.com/Jeffrey9049" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div>
-        <nav class="footer-links" aria-label="Footer"><a href="index.html">Home</a><a href="research.html">Network Research</a><a href="sign-language.html">Sign Language AI</a><a href="research.html#publications">Publications</a></nav>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Lan-jun Jeffrey Chang</p>
+      <div class="footer-links">
+        <a href="https://github.com/Jeffrey9049" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="publications.html">Publications</a>
       </div>
-      <div class="footer-bottom"><p>© <span id="copyright-year">2026</span> Lan-jun Jeffrey Chang.</p><p>Built with HTML, CSS & JavaScript · Hosted on GitHub Pages</p></div>
     </div>
   </footer>
 </body>
