@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Taiwan Sign Language research and multimodal learning by Lan-jun Jeffrey Chang.">
+  <meta name="description" content="Taiwan Sign Language research, corpus analysis, machine learning, and AI education by Lan-jun Jeffrey Chang.">
   <meta name="theme-color" content="#ffffff">
   <title>Sign Language | Lan-jun Jeffrey Chang</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -23,72 +23,64 @@
     </div>
   </header>
   <main id="main" class="container">
-    <section class="page-intro">
-      <h1>Taiwan Sign Language Research</h1>
-      <p class="summary">I work on computational methods for Taiwan Sign Language (TSL), combining motion-based representations with linguistic annotations for recognition and corpus analysis.</p>
-    </section>
-
-    <section class="content-section">
-      <h2>Research Overview</h2>
-      <p>Sign-language understanding requires information about handshape, palm orientation, location, movement, and temporal context. My research considers how these visual and linguistic dimensions can be represented and used in data-driven models, particularly when labeled datasets are limited.</p>
-      <p>At the Graduate Institute of Linguistics, National Chung Cheng University, I contribute to multimodal corpus processing and machine-learning-based annotation and recognition workflows.</p>
-    </section>
-
-    <section class="content-section">
-      <h2>Current Work</h2>
-      <div class="project">
-        <h3>Landmark-Based Sign Recognition</h3>
-        <p>We extract body and hand landmarks from recorded signing and use temporal sequence models to recognize signed lexical items. Existing offline experiments use a bidirectional GRU and compare landmark-only representations with approaches incorporating aligned ELAN linguistic information.</p>
-        <p class="project-keywords">MediaPipe · Spatiotemporal landmarks · Bidirectional GRU · PyTorch</p>
-      </div>
-      <div class="project">
-        <h3>Linguistically Informed Modeling</h3>
-        <p>ELAN annotation tiers provide complementary descriptions of a sign, including gloss, handshape, palm orientation, location, and movement. I am interested in whether structured feature processing, attention mechanisms, and multi-task supervision improve recognition and generalization.</p>
-        <p class="project-keywords">ELAN · Multimodal learning · Feature attention · Multi-task learning</p>
-      </div>
-      <div class="project">
-        <h3>Corpus Analysis</h3>
-        <p>In addition to lexical recognition, I study computational workflows for analyzing annotated Taiwan Sign Language corpora, including semantic roles, discourse reference, and relationships between linguistic labels and movement observations.</p>
-        <p class="project-keywords">Corpus processing · Linguistic annotation · Semantic analysis</p>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <h2>Methods and Evaluation</h2>
-      <div class="stack">
-        <div><h3>Data and Modeling</h3>
-          <ul class="small-list">
-            <li>Temporal landmark sequences from video</li>
-            <li>Gloss-aligned ELAN annotation tiers</li>
-            <li>Sequence recognition and representation learning</li>
-            <li>Feature-specific and multi-task approaches</li>
-          </ul>
-        </div>
-        <div><h3>Evaluation Questions</h3>
-          <ul class="small-list">
-            <li>Top-1 and Top-5 lexical accuracy</li>
-            <li>Generalization across signers</li>
-            <li>Visually similar sign vocabulary</li>
-            <li>Robustness across recording conditions</li>
-          </ul>
-        </div>
-      </div>
-      <p class="note">Some research directions described here are ongoing or planned experiments rather than published findings. Results will be added when they are ready to share.</p>
-    </section>
-
-    <section class="content-section">
-      <h2>Related Research</h2>
-      <p>My research in network optimization provides a complementary foundation in mathematical modeling, algorithm design, and resource-constrained systems.</p>
-      <a class="text-link" href="research.html">Network Optimization Research →</a>
-    </section>
+<section class="page-intro">
+<h1>Sign Language</h1>
+<p class="summary">I work on computational methods for Taiwan Sign Language (TSL), combining motion-based representations with linguistic annotations for recognition and corpus analysis.</p>
+</section>
+<figure class="teaching-photo">
+<img alt="Teaching a hands-on machine learning and AI session for Taiwan Sign Language research, with participants and projected software demonstrations" decoding="async" height="1152" loading="eager" src="tsl-ml-teaching.png" width="1536"/>
+<figcaption>Hands-on ML/AI instruction for Taiwan Sign Language research at National Chung Cheng University.</figcaption>
+</figure>
+<section class="content-section">
+<h2>Research Overview</h2>
+<p>Sign-language understanding requires information about handshape, palm orientation, location, movement, and temporal context. My research considers how these visual and linguistic dimensions can be represented and used in data-driven models, particularly when labeled datasets are limited.</p>
+<p>At the Graduate Institute of Linguistics, National Chung Cheng University, I contribute to multimodal corpus processing and machine-learning-based annotation and recognition workflows.</p>
+</section>
+<section class="content-section">
+<h2>Current Work</h2>
+<div class="project">
+<h3>Landmark-Based Sign Recognition</h3>
+<p>We extract body and hand landmarks from recorded signing and use temporal sequence models to recognize signed lexical items. Existing offline experiments use a bidirectional GRU and compare landmark-only representations with approaches incorporating aligned ELAN linguistic information.</p>
+<p class="project-keywords">MediaPipe · Spatiotemporal landmarks · Bidirectional GRU · PyTorch</p>
+</div>
+<div class="project">
+<h3>Linguistically Informed Modeling</h3>
+<p>ELAN annotation tiers provide complementary descriptions of a sign, including gloss, handshape, palm orientation, location, and movement. I am interested in whether structured feature processing, attention mechanisms, and multi-task supervision improve recognition and generalization.</p>
+<p class="project-keywords">ELAN · Multimodal learning · Feature attention · Multi-task learning</p>
+</div>
+<div class="project">
+<h3>Corpus Analysis</h3>
+<p>In addition to lexical recognition, I study computational workflows for analyzing annotated Taiwan Sign Language corpora, including semantic roles, discourse reference, and relationships between linguistic labels and movement observations.</p>
+<p class="project-keywords">Corpus processing · Linguistic annotation · Semantic analysis</p>
+</div>
+</section>
+<section class="content-section">
+<h2>Methods and Evaluation</h2>
+<div class="stack">
+<div><h3>Data and Modeling</h3>
+<ul class="small-list">
+<li>Temporal landmark sequences from video</li>
+<li>Gloss-aligned ELAN annotation tiers</li>
+<li>Sequence recognition and representation learning</li>
+<li>Feature-specific and multi-task approaches</li>
+</ul>
+</div>
+<div><h3>Evaluation Questions</h3>
+<ul class="small-list">
+<li>Top-1 and Top-5 lexical accuracy</li>
+<li>Generalization across signers</li>
+<li>Visually similar sign vocabulary</li>
+<li>Robustness across recording conditions</li>
+</ul>
+</div>
+</div>
+<p class="note">Some research directions described here are ongoing or planned experiments rather than published findings. Results will be added when they are ready to share.</p>
+</section>
   </main>
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2026 Lan-jun Jeffrey Chang</p>
-      <div class="footer-links">
-        <a href="https://github.com/Jeffrey9049" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="publications.html">Publications</a>
-      </div>
+      <a class="footer-email" href="mailto:comljchang@gmail.com">comljchang@gmail.com</a>
     </div>
   </footer>
 </body>
