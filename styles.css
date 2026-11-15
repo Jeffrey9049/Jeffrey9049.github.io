@@ -206,3 +206,15 @@ h3{font-size:1.12rem;font-weight:650;letter-spacing:-.012em}
 .recognition-feature .recognition-external-note{font-size:.8rem;color:var(--muted);margin:0;line-height:1.5}
 @media(max-width:780px){.recognition-feature{grid-template-columns:1fr;padding:23px 20px;gap:21px}.recognition-feature-action{align-items:flex-start}}
 @media(max-width:400px){.recognition-open-link{white-space:normal}}
+
+/* Academic contact details directly beneath the homepage portrait. */
+.portrait-column { min-width:0; }
+.portrait-contact { display:grid; gap:12px; margin-top:19px; font-style:normal; font-size:.91rem; }
+.portrait-contact-row { display:grid; grid-template-columns:72px minmax(0,1fr); gap:11px; align-items:baseline; }
+.portrait-contact-label { font-size:.78rem; letter-spacing:.02em; font-weight:600; color:var(--muted); }
+.portrait-contact a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; line-height:1.4; }
+.portrait-contact a:hover { text-decoration:underline; }
+@media(max-width:690px) {
+  .portrait-column { width:min(100%, 300px); }
+  .portrait { width:100%; }
+}
