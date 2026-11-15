@@ -140,3 +140,54 @@ h3{font-size:1.12rem;font-weight:650;letter-spacing:-.012em}
 
 /* Ongoing avatar modeling project */
 .project-status{font-size:.88rem;color:var(--muted);font-style:italic;margin-top:9px}
+
+/* Academic software directory and individual tool pages. */
+.breadcrumb{display:flex;gap:11px;align-items:center;padding:40px 0 0;font-size:.87rem;color:var(--muted)}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.breadcrumb a:hover{color:var(--accent);text-decoration:underline}
+.app-intro{padding-top:28px;max-width:970px;padding-bottom:28px}
+.tool-list-intro{padding-bottom:35px}
+.app-intro .summary,.tool-list-intro .summary{max-width:810px}
+.app-quick-facts{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:36px;padding:19px 0}
+.app-quick-facts div{display:flex;flex-direction:column;gap:4px;padding-right:22px}
+.app-quick-facts div+div{border-left:1px solid var(--line);padding-left:23px}
+.fact-label{color:var(--muted);font-size:.78rem;letter-spacing:.025em}
+.app-quick-facts strong{font-size:.93rem;font-weight:600;line-height:1.5}
+.software-title-link{color:var(--ink);text-decoration:none}
+.software-title-link:hover{color:var(--accent);text-decoration:underline}
+.tool-type{font-size:.76rem!important;color:var(--accent)!important;font-weight:650;text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px!important}
+.software-item{min-height:305px}
+.software-item .software-actions{margin-top:auto;display:flex;gap:10px 17px;align-items:center;flex-wrap:wrap}
+.software-item .software-actions .plain-action{font-size:.87rem;font-weight:650;text-decoration:none}
+.software-item .software-actions .plain-action:hover{text-decoration:underline}
+.software-item .download-unavailable,.software-item .download-link{margin:0;padding:8px 11px;font-size:.8rem}
+.software-item .download-unavailable{font-weight:500}
+.software-directory{padding-top:15px}
+.software-directory-grid{margin-top:16px}
+.software-directory-grid .software-item{min-height:400px}
+.simple-feature-list{margin:0 0 25px!important;padding:0 0 0 19px!important;font-size:.89rem;line-height:1.5;color:var(--muted)!important}
+.simple-feature-list li{padding-bottom:4px!important}
+.software-context p{max-width:855px}
+.software-small-backlink{font-size:.94rem}
+.tool-overview{padding-top:19px}
+.tool-workflow{padding-bottom:0}
+.workflow-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;list-style:none;counter-reset:none;padding:0!important;margin:12px 0 4px!important}
+.workflow-grid li{border:1px solid var(--line);background:var(--paper);padding:24px 21px 26px;min-height:207px;max-width:none}
+.workflow-grid h3{font-size:1.02rem;margin:9px 0 7px}
+.workflow-grid p{font-size:.9rem;line-height:1.55;color:var(--muted);margin-bottom:0}
+.workflow-index{font-family:Georgia,serif;color:var(--accent);font-size:1.25rem}
+.app-bullet-list{padding-left:23px}
+.app-bullet-list li{max-width:900px}
+.download-panel{border:1px solid var(--line);background:var(--soft-bg);padding:28px 30px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;max-width:960px}
+.download-panel h3{margin:0 0 7px!important;font-size:1.16rem}
+.download-panel p{font-size:.92rem;margin:0 0 7px;max-width:680px;color:var(--muted)}
+.download-panel .download-link,.download-panel .download-unavailable{white-space:nowrap;margin:0}
+.release-meta:empty{display:none}
+.download-panel-action{display:flex;justify-content:flex-end}
+.download-section{padding-top:44px}
+.tool-back-link{font-size:.9rem;margin:33px 0 20px}
+.tool-back-link a{text-decoration:none}
+.tool-back-link a:hover{text-decoration:underline}
+[hidden]{display:none!important}
+@media(max-width:800px){.app-quick-facts{grid-template-columns:repeat(3,1fr)}.workflow-grid{gap:11px}.workflow-grid li{padding:19px 15px}.download-panel{grid-template-columns:1fr;gap:15px}.download-panel-action{justify-content:flex-start}}
+@media(max-width:690px){.breadcrumb{padding-top:28px}.app-quick-facts{grid-template-columns:1fr;gap:0;padding:8px 0}.app-quick-facts div{padding:10px 0}.app-quick-facts div+div{border-left:none;border-top:1px solid var(--line);padding-left:0}.workflow-grid{grid-template-columns:1fr;gap:10px}.workflow-grid li{min-height:unset}.software-directory-grid .software-item{min-height:unset}.download-panel{padding:21px 19px}}

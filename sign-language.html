@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research in Taiwan Sign Language, accessible AI tools, and interdisciplinary collaboration by Lan-jun Jeffrey Chang.">
+  <meta name="description" content="Research in Taiwan Sign Language, accessible AI tools, and interdisciplinary collaboration by Lan-Jun Jeffrey Chang.">
   <meta name="theme-color" content="#ffffff">
-  <title>Sign Language | Lan-jun Jeffrey Chang</title>
+  <title>Sign Language | Lan-Jun Jeffrey Chang</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,12 +13,13 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="site-name" href="index.html">Lan-jun Jeffrey Chang</a>
+      <a class="site-name" href="index.html">Lan-Jun Jeffrey Chang</a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="sign-language.html" aria-current="page">Sign Language</a>
+        <a href="software.html">Software</a>
       </nav>
     </div>
   </header>
@@ -37,23 +38,31 @@
   <figcaption>Hands-on instruction in machine learning and AI tools for Taiwan Sign Language research at National Chung Cheng University.</figcaption>
 </figure>
 <section class="content-section software-section" id="software">
-  <h2>Software Tools</h2>
-  <p>Alongside my research, I develop practical software to lower the technical barriers to sign language data collection and analysis. These tools are intended to make common research tasks approachable for people with limited programming experience.</p>
+  <h2>Software</h2>
+  <p>As part of my work to connect sign language research and AI, I develop software intended for researchers, educators, and students who may not have a programming background. Each project has a dedicated page with its purpose, intended workflow, and release information.</p>
   <div class="software-grid">
     <article class="software-item">
-      <h3>Landmark Studio</h3>
-      <p>A visual interface for extracting motion landmarks from videos. Users can select the tracking components they need, such as hands, body pose, or face landmarks, and export structured data for further analysis without writing code.</p>
-      <!-- Replace the disabled span below with a real <a href="YOUR_DOWNLOAD_URL" class="download-link">Download for Windows</a> after publishing the installer. -->
-      <span class="download-unavailable" aria-label="Landmark Studio download not yet available">Windows download — coming soon</span>
+      <p class="tool-type">Video processing</p>
+      <h3><a class="software-title-link" href="landmark-studio.html">Landmark Studio</a></h3>
+      <p>A graphical tool for extracting body, hand, and facial landmarks from video for sign language analysis and data preparation.</p>
+      <div class="software-actions">
+        <a class="plain-action" href="landmark-studio.html">About the software <span aria-hidden="true">↗</span></a>
+        <a class="download-link" data-download-link="landmark" hidden href="#" target="_blank" rel="noopener noreferrer">Download for Windows</a>
+        <span class="download-unavailable" data-download-pending="landmark">Download not yet available</span>
+      </div>
     </article>
     <article class="software-item">
-      <h3>Sign Language ML Studio</h3>
-      <p>A beginner-friendly desktop environment for exploring machine learning with sign language examples. It is designed to help researchers and students prepare labeled data and try recognition workflows without having to build a machine learning pipeline from scratch.</p>
-      <!-- Replace the disabled span below with a real <a href="YOUR_DOWNLOAD_URL" class="download-link">Download for Windows</a> after publishing the installer. -->
-      <span class="download-unavailable" aria-label="Sign Language ML Studio download not yet available">Windows download — coming soon</span>
+      <p class="tool-type">Machine learning</p>
+      <h3><a class="software-title-link" href="ml-studio.html">Sign Language ML Studio</a></h3>
+      <p>An accessible desktop environment for preparing labeled examples and exploring sign language recognition without writing training code.</p>
+      <div class="software-actions">
+        <a class="plain-action" href="ml-studio.html">About the software <span aria-hidden="true">↗</span></a>
+        <a class="download-link" data-download-link="ml" hidden href="#" target="_blank" rel="noopener noreferrer">Download for Windows</a>
+        <span class="download-unavailable" data-download-pending="ml">Download not yet available</span>
+      </div>
     </article>
   </div>
-  <p class="software-note">Download packages and version details will be provided here when the software releases are ready.</p>
+  <p class="software-note">Release links will appear here when verified installation packages are published. See the <a href="software.html">Software overview</a> for both projects.</p>
 </section>
 <section class="content-section">
 <h2>Research Overview</h2>
@@ -110,9 +119,11 @@
   </main>
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Lan-jun Jeffrey Chang</p>
+      <p>© 2026 Lan-Jun Jeffrey Chang</p>
       <a class="footer-email" href="mailto:comljchang@gmail.com">comljchang@gmail.com</a>
     </div>
   </footer>
+<script src="software-links.js" defer></script>
+<script src="software-buttons.js" defer></script>
 </body>
 </html>
