@@ -1,9 +1,7 @@
 /*
- * Software download link configuration.
- * Replace each empty url with a VERIFIED public release-asset URL.
- * Never put passwords, API keys, or private links in this public file.
- * Example (format only):
- * https://github.com/OWNER/REPO/releases/download/v1.0.0/App-Windows.zip
+ * Published Windows applications (GitHub Releases).
+ * The ML Studio release tag uses encoded commas (v0%2C4%2C1): retain it as published.
+ * These links are public. Keep research source code and private data in separate repositories.
  */
 window.SCHOLAR_SOFTWARE_RELEASES = {
   landmark: {
