@@ -34,3 +34,13 @@ Lan-Jun Jeffrey Chang 學術網站 — Sign Language Recognition 展示更新
 - 輕量化、免獨立 GPU 是設計定位；實際執行速度依 CPU、影片解析度、資料量等而不同。
 - 本 ZIP 包含靜態網站檔案與圖片，不含 EXE 本體；下載會連到 GitHub Releases。
 - 未公開研究原始碼、私人影片或研究資料不應放進公開 Repository。
+
+
+【Cloudflare Web Analytics 流量統計更新（2026-11-16）】
+- 已將 Cloudflare Web Analytics 追蹤程式加到所有 7 個 HTML 頁面的 <head> 中。
+- 使用的 Web Analytics token：f5f87599f31e4d71a6280b4d701c4378
+- 只追蹤這套 GitHub Pages 網站的 HTML 頁面；獨立部署的 tsl-collective.comljchang.chatgpt.site 辨識網站不會自動納入。
+- 請上傳 ZIP 解壓縮後的所有檔案至 GitHub Pages Repo 根目錄，等待 Pages 重新部署。
+- 發布後以無痕視窗訪問 https://jeffrey9049.github.io/ ，稍後前往 Cloudflare > Web Analytics 檢查 Page Views / Visits。
+- 此追蹤從安裝完成後開始收集資料，不能追溯過往的網頁訪客；會受瀏覽器隱私設定、廣告阻擋等影響。
+- 追蹤程式不應放入其他網站（如手語辨識網站）的原始碼中，除非你也要計算那些網站的流量。
