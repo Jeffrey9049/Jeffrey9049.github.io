@@ -1,90 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Landmark Studio: a graphical tool for extracting body, hand, and face landmarks from videos.">
-  <meta name="theme-color" content="#ffffff">
-  <title>Landmark Studio | Lan-Jun Jeffrey Chang</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css">
-  <script src="software-links.js" defer></script>
-  <script src="software-buttons.js" defer></script>
-  <!-- Cloudflare Web Analytics -->
-  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"f5f87599f31e4d71a6280b4d701c4378"}'></script>
-  <!-- End Cloudflare Web Analytics -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Landmark Studio: a graphical tool for extracting body, hand, and face landmarks from videos." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<title>Landmark Studio | Lan-Jun Jeffrey Chang</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="software-links.js"></script>
+<script defer="" src="software-buttons.js"></script>
+<!-- Cloudflare Web Analytics -->
+<script data-cf-beacon='{"token":"f5f87599f31e4d71a6280b4d701c4378"}' src="https://static.cloudflareinsights.com/beacon.min.js" type="module"></script>
+<!-- End Cloudflare Web Analytics -->
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="site-name" href="index.html">Lan-Jun Jeffrey Chang</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="sign-language.html">Sign Language</a>
-        <a href="software.html" aria-current="page">Software</a>
-      </nav>
-    </div>
-  </header>
-  <main id="main" class="container">
-<nav class="breadcrumb" aria-label="Breadcrumb"><a href="software.html">Software</a><span aria-hidden="true">/</span><span>Landmark Studio</span></nav>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container header-inner">
+<a class="site-name" href="index.html">Lan-Jun Jeffrey Chang</a>
+<nav aria-label="Main navigation" class="site-nav">
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="sign-language.html">Sign Language</a>
+<a aria-current="page" href="software.html">Software</a>
+</nav>
+</div>
+</header>
+<main class="container" id="main">
+<nav aria-label="Breadcrumb" class="breadcrumb"><a href="software.html">Software</a><span aria-hidden="true">/</span><span>Landmark Studio</span></nav>
 <section class="page-intro app-intro">
-  <p class="eyebrow">Video analysis software</p>
-  <h1>Landmark Studio</h1>
-  <p class="summary">A lightweight, CPU-friendly graphical application that converts video into structured body, hand, and face landmark data without programming or a dedicated graphics card.</p>
-  <div class="app-quick-facts" aria-label="Software overview">
-    <div><span class="fact-label">Purpose</span><strong>Landmark extraction</strong></div>
-    <div><span class="fact-label">Primary users</span><strong>Researchers and educators</strong></div>
-    <div><span class="fact-label">Hardware</span><strong>Windows · No dedicated GPU required</strong></div>
-  </div>
+<p class="eyebrow">Video analysis software</p>
+<h1>Landmark Studio</h1>
+<p class="summary">A lightweight, CPU-friendly graphical application that converts video into structured body, hand, and face landmark data without programming or a dedicated graphics card. Available for Windows and macOS.</p>
+<div aria-label="Software overview" class="app-quick-facts">
+<div><span class="fact-label">Purpose</span><strong>Landmark extraction</strong></div>
+<div><span class="fact-label">Primary users</span><strong>Researchers and educators</strong></div>
+<div><span class="fact-label">Hardware</span><strong>Windows / macOS · No dedicated GPU required</strong></div>
+</div>
 </section>
 <section class="content-section tool-overview">
-  <h2>Overview</h2>
-  <p>Landmark Studio is designed to simplify the preparation of movement data for sign language research. Instead of requiring users to install and write code for pose-estimation libraries, it provides a more approachable interface for selecting video input and the landmarks relevant to a study.</p>
-  <p>The tool is designed to run using standard Windows computer hardware without requiring a discrete graphics card. By reducing setup complexity and hardware requirements, it aims to help more sign language researchers, educators, and students explore motion analysis. Processing time can vary with the length and resolution of videos.</p><p>The tool supports preparing landmark-based datasets, inspecting captured motion, and introducing video-based tracking methods in teaching.</p>
+<h2>Overview</h2>
+<p>Landmark Studio is designed to simplify the preparation of movement data for sign language research. Instead of requiring users to install and write code for pose-estimation libraries, it provides a more approachable interface for selecting video input and the landmarks relevant to a study.</p>
+<p>The tool aims to run on standard computer hardware without requiring a dedicated graphics card. By reducing setup complexity and hardware requirements, it helps more sign language researchers, educators, and students explore motion analysis. Processing time can vary with the length and resolution of videos.</p><p>The tool supports preparing landmark-based datasets, inspecting captured motion, and introducing video-based tracking methods in teaching.</p>
 </section>
 <section class="content-section tool-workflow">
-  <h2>Typical Workflow</h2>
-  <ol class="workflow-grid">
-    <li><span class="workflow-index">01</span><h3>Choose a video</h3><p>Use a recorded signing sample as the source for motion analysis.</p></li>
-    <li><span class="workflow-index">02</span><h3>Select landmarks</h3><p>Choose the relevant tracking components, including hands, pose, or face.</p></li>
-    <li><span class="workflow-index">03</span><h3>Prepare research data</h3><p>Use the extracted landmark information in a structured form for subsequent analysis.</p></li>
-  </ol>
+<h2>Typical Workflow</h2>
+<ol class="workflow-grid">
+<li><span class="workflow-index">01</span><h3>Choose a video</h3><p>Use a recorded signing sample as the source for motion analysis.</p></li>
+<li><span class="workflow-index">02</span><h3>Select landmarks</h3><p>Choose the relevant tracking components, including hands, pose, or face.</p></li>
+<li><span class="workflow-index">03</span><h3>Prepare research data</h3><p>Use the extracted landmark information in a structured form for subsequent analysis.</p></li>
+</ol>
 </section>
 <section class="content-section">
-  <h2>Applications</h2>
-  <ul class="app-bullet-list">
-    <li>Building landmark-based sign language datasets</li>
-    <li>Introducing motion tracking in hands-on workshops</li>
-    <li>Preparing visual features for downstream machine learning experiments</li>
-  </ul>
+<h2>Applications</h2>
+<ul class="app-bullet-list">
+<li>Building landmark-based sign language datasets</li>
+<li>Introducing motion tracking in hands-on workshops</li>
+<li>Preparing visual features for downstream machine learning experiments</li>
+</ul>
 </section>
 <section class="content-section download-section" id="download">
-  <h2>Download</h2>
-  <div class="download-panel">
-    <div>
-      <h3>Landmark Studio for Windows</h3>
-      <p>Choose the English or Traditional Chinese portable Windows application. Designed for CPU-based operation; a dedicated GPU is not required.</p>
-      <p class="release-meta" data-release-version="landmark">Version 1.2.0 · English / 繁體中文</p>
-    </div>
-    <div class="download-panel-action">
-      <div class="language-downloads" role="group" aria-label="Landmark Studio downloads by language">
-          <a class="download-link" data-download-link="landmark.en" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/2/SignLanguage-Landmark--1.2.0.exe" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Download Landmark Studio 1.2.0, English version">English version <span aria-hidden="true">↗</span></a>
-          <a class="download-link" data-download-link="landmark.zh" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/V1.1.2/Landmarkzh-1.2.0.exe" target="_blank" rel="noopener noreferrer" lang="zh-Hant" aria-label="下載 Landmark Studio 1.2.0，繁體中文版">繁體中文版 <span aria-hidden="true">↗</span></a>
-        </div>
-    </div>
-  </div>
-  <p class="software-note">The Windows executable is distributed through GitHub Releases. Hardware performance varies with video size and system specifications; please use the version information above when reporting issues.</p>
+<h2>Download</h2>
+<div class="download-panel">
+<div class="download-panel-copy"><h3>Landmark Studio for Windows and macOS</h3>
+<p>Select your operating system and preferred interface language. Windows packages are executable (.exe); macOS downloads are disk images (.dmg).</p>
+<p class="release-meta" data-release-version="landmark">Version 1.2.0 · Windows / macOS · English / 繁體中文</p></div>
+<div class="download-panel-action"><div aria-label="Download options by operating system and language" class="platform-download-groups"><div aria-label="Landmark Studio for Windows" class="platform-download-group" role="group"><span class="platform-label">Windows</span><div class="language-downloads"><a aria-label="Download Landmark Studio 1.2.0 for Windows in English" class="download-link" data-download-link="landmark.windows.en" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/2/SignLanguage-Landmark--1.2.0.exe" lang="en" rel="noopener noreferrer" target="_blank">English <span aria-hidden="true">↗</span></a><a aria-label="下載 Landmark Studio 1.2.0 Windows 繁體中文版" class="download-link" data-download-link="landmark.windows.zh" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/V1.1.2/Landmarkzh-1.2.0.exe" lang="zh-Hant" rel="noopener noreferrer" target="_blank">繁體中文 <span aria-hidden="true">↗</span></a></div></div><div aria-label="Landmark Studio for macOS" class="platform-download-group" role="group"><span class="platform-label">macOS</span><div class="language-downloads"><a aria-label="Download Landmark Studio 1.2.0 for macOS in English" class="download-link" data-download-link="landmark.macos.en" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/mac01/Landmark-EN-1.2.0.dmg" lang="en" rel="noopener noreferrer" target="_blank">English <span aria-hidden="true">↗</span></a><a aria-label="下載 Landmark Studio 1.2.0 macOS 繁體中文版" class="download-link" data-download-link="landmark.macos.zh" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/mac01/Landmark-ZH-1.2.0.dmg" lang="zh-Hant" rel="noopener noreferrer" target="_blank">繁體中文 <span aria-hidden="true">↗</span></a></div></div></div></div>
+</div>
+<p class="software-note">Downloads are hosted on GitHub Releases. Mac users should open the DMG and follow the installation instructions provided; supported macOS versions and processor architectures have not been specified here. Video-processing performance varies by hardware and input size.</p>
 </section>
 <p class="tool-back-link"><a href="software.html">← All software</a></p>
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 Lan-Jun Jeffrey Chang</p>
-      <a class="footer-email" href="mailto:comljchang@gmail.com">comljchang@gmail.com</a>
-    </div>
-  </footer>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© 2026 Lan-Jun Jeffrey Chang</p>
+<a class="footer-email" href="mailto:comljchang@gmail.com">comljchang@gmail.com</a>
+</div>
+</footer>
 </body>
 </html>
+
