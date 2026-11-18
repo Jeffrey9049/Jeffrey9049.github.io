@@ -218,3 +218,22 @@ h3{font-size:1.12rem;font-weight:650;letter-spacing:-.012em}
   .portrait-column { width:min(100%, 300px); }
   .portrait { width:100%; }
 }
+
+
+/* Bilingual downloads: equal emphasis for English and Traditional Chinese editions. */
+.language-availability{font-size:.94rem;color:var(--muted);margin-top:12px;max-width:780px}
+.software-item .software-version{font-size:.82rem;line-height:1.45;color:var(--accent);margin:-5px 0 13px}
+.language-downloads{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.language-downloads .download-link{margin:0;white-space:normal;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-align:center}
+.software-item .language-downloads{width:100%}
+.software-item .software-actions{width:100%;align-items:flex-start;flex-direction:column;gap:12px}
+.software-item .language-downloads .download-link{font-size:.82rem;padding:9px 12px}
+.download-panel-action .language-downloads{justify-content:flex-end}
+@media(max-width:800px){.download-panel-action .language-downloads{justify-content:flex-start}}
+@media(max-width:420px){.language-downloads{width:100%}.download-panel-action .language-downloads .download-link{flex:1 1 auto}}
+
+/* Make all five navigation items visible on narrow screens, rather than clipping the final tab. */
+@media(max-width:690px){
+  .site-nav{flex-wrap:wrap;overflow:visible;column-gap:16px;row-gap:0}
+  .site-nav a{padding:8px 0 7px}
+}

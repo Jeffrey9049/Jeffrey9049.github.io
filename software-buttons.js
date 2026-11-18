@@ -1,31 +1,26 @@
-/* Enables download buttons only after a valid public URL is configured. */
+/* Shared release links; direct HTML URLs are retained as a no-JavaScript fallback. */
 (function () {
   "use strict";
   var releases = window.SCHOLAR_SOFTWARE_RELEASES || {};
-  function validReleaseURL(value) {
-    if (typeof value !== "string" || !value.trim()) return false;
-    try {
-      var url = new URL(value);
-      return url.protocol === "https:";
-    } catch (_) { return false; }
+  function isHttps(value) {
+    if (typeof value !== "string") return false;
+    try { return new URL(value).protocol === "https:"; }
+    catch (_) { return false; }
+  }
+  function downloadFor(key) {
+    var parts = String(key || "").split(".");
+    if (parts.length !== 2) return null;
+    var software = releases[parts[0]] || {};
+    var locale = software[parts[1]] || {};
+    return locale;
   }
   document.querySelectorAll("[data-download-link]").forEach(function (link) {
-    var key = link.getAttribute("data-download-link");
-    var item = releases[key] || {};
-    if (!validReleaseURL(item.url)) return;
-    link.href = item.url.trim();
-    link.hidden = false;
-  });
-  document.querySelectorAll("[data-download-pending]").forEach(function (element) {
-    var key = element.getAttribute("data-download-pending");
-    var item = releases[key] || {};
-    if (validReleaseURL(item.url)) element.hidden = true;
+    var release = downloadFor(link.getAttribute("data-download-link"));
+    if (release && isHttps(release.url)) link.href = release.url;
   });
   document.querySelectorAll("[data-release-version]").forEach(function (element) {
-    var key = element.getAttribute("data-release-version");
-    var item = releases[key] || {};
-    if (validReleaseURL(item.url) && item.version) {
-      element.textContent = "Available version: " + item.version;
-    }
+    var release = releases[element.getAttribute("data-release-version")];
+    if (release && release.version)
+      element.textContent = "Version " + release.version + " · English / 繁體中文";
   });
 })();
