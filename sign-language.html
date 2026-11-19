@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Research on Taiwan Sign Language translation and generation, occlusion-aware motion capture, discourse-level language modeling, and avatar motion synthesis by Lan-Jun Jeffrey Chang." name="description"/>
+<meta content="Research on Taiwan Sign Language translation and generation, robust motion capture, spatial semantics and reference modeling, discourse-level language modeling, and avatar motion synthesis by Lan-Jun Jeffrey Chang." name="description"/>
 <meta content="#ffffff" name="theme-color"/>
 <title>Sign Language | Lan-Jun Jeffrey Chang</title>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -25,6 +25,13 @@
 .tsl-framework .tsl-framework-note{margin:16px 0 0;color:var(--muted);font-size:.8rem;line-height:1.6}
 .tsl-evaluation{row-gap:24px}.tsl-evaluation h3{font-size:1.08rem}.tsl-evaluation ul{margin-bottom:0}
 @media(max-width:500px){.tsl-framework{padding:15px 10px}.tsl-flow-branches{gap:8px}.tsl-flow-node{padding:10px 6px}.tsl-flow-node strong{font-size:.8rem}.tsl-flow-node span{font-size:.72rem}}
+
+.spatial-research-figure{margin:24px 0 22px;max-width:100%;}
+.spatial-research-figure a{display:block;border:1px solid #dce2e8;background:#fff;overflow:hidden;}
+.spatial-research-figure img{display:block;width:100%;height:auto;max-width:100%;}
+.spatial-research-figure figcaption{margin:12px 0 0;font-size:.86rem;line-height:1.65;color:var(--muted,#526171);}
+.spatial-research-figure figcaption strong{color:var(--text,#24364b);}
+.spatial-research-figure .figure-link{display:inline-block;border:0;background:transparent;margin-top:5px;}
 </style></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -47,19 +54,21 @@
 <section aria-labelledby="overview-heading" class="content-section" id="research-overview">
 <h2 id="overview-heading">Research Overview</h2>
 <p>My long-term research focuses on two complementary problems: <strong>translating Taiwan Sign Language (TSL) into written Chinese</strong> and <strong>generating linguistically meaningful signing through digital avatars</strong>. These problems require an understanding of both the visual dynamics of signing and the linguistic structure that gives those movements meaning.</p>
-<p>At the Graduate Institute of Linguistics, National Chung Cheng University, I work on annotated TSL corpora, multimodal representations, and machine learning. My current research investigates robust motion capture, occlusion-aware pose reconstruction, discourse-level language modeling, and skeletal motion generation. I view isolated sign recognition as a foundation for broader language understanding rather than as the final translation task.</p>
+<p>At the Graduate Institute of Linguistics, National Chung Cheng University, I work on annotated TSL corpora, multimodal representations, and machine learning. My current research investigates robust motion capture, occlusion-aware pose reconstruction, linguistically meaningful spatial representations, discourse-level language modeling, and skeletal motion generation. I view isolated sign recognition as a foundation for broader language understanding rather than as the final translation task.</p>
 <figure aria-labelledby="framework-title" class="tsl-framework">
 <figcaption id="framework-title">Research framework</figcaption>
 <div class="tsl-flow-shared">
 <div class="tsl-flow-node"><strong>Signing video and annotated corpora</strong><span>Visual observations · Linguistic annotations</span></div>
 <span aria-hidden="true" class="tsl-flow-arrow">↓</span>
 <div class="tsl-flow-node"><strong>Motion capture and representation learning</strong><span>Pose estimation · Occlusion-aware reconstruction · Temporal and linguistic features</span></div>
+<span aria-hidden="true" class="tsl-flow-arrow">↓</span>
+<div class="tsl-flow-node"><strong>Spatial semantics and reference modeling</strong><span>Relative spatial relations · Referential loci · Discourse context</span></div>
 </div>
 <div class="tsl-flow-branches">
-<div class="tsl-flow-branch"><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node"><strong>Sign language understanding</strong><span>Recognition · Context and discourse modeling</span></div><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node tsl-flow-end"><strong>TSL-to-Chinese translation</strong><span>Written Chinese</span></div></div>
-<div class="tsl-flow-branch"><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node"><strong>Motion learning and synthesis</strong><span>Skeletal sequences · 2D-to-3D reconstruction</span></div><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node tsl-flow-end"><strong>Sign language generation</strong><span>Avatar animation; text conditioning as a future direction</span></div></div>
+<div class="tsl-flow-branch"><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node"><strong>Sign language understanding</strong><span>Recognition · Spatial reference · Discourse modeling</span></div><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node tsl-flow-end"><strong>TSL-to-Chinese translation</strong><span>Written Chinese</span></div></div>
+<div class="tsl-flow-branch"><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node"><strong>Motion learning and synthesis</strong><span>Skeletal sequences · 2D-to-3D reconstruction · Spatial consistency</span></div><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node tsl-flow-end"><strong>Sign language generation</strong><span>Avatar animation; text conditioning as a future direction</span></div></div>
 </div>
-<p class="tsl-framework-note">Conceptual research directions, not an implemented end-to-end system. Both directions draw on learned motion representations and linguistic annotations; text-conditioned generation is a longer-term objective.</p>
+<p class="tsl-framework-note">Conceptual research directions, not an implemented end-to-end system. Both directions draw on learned motion representations, linguistic annotations, and spatial semantics; text-conditioned generation is a longer-term objective.</p>
 </figure>
 </section>
 <section class="content-section" id="current-research">
@@ -78,17 +87,29 @@
 <p class="project-keywords">Spatiotemporal representation learning · BiGRU · Transformers (exploratory) · ELAN · Multimodal learning</p>
 <p class="project-status">Status: Existing baseline experiments; further modeling and evaluation are ongoing.</p>
 </article>
+<article class="project" id="spatial-semantics">
+<h3>Spatial Semantics and Reference Modeling in Sign Language</h3>
+<p>Signing space is not merely a geometric environment for describing motion; it can also encode linguistic and discourse information. Signers may establish spatial loci for referents, reuse these locations in subsequent utterances, and express relationships through pointing, directional movement, and the spatial organization of signs. Consequently, learning the coordinates of individual joints alone is insufficient for understanding the meaning of signed discourse.</p>
+<p>I aim to investigate how models can learn the linguistic significance of spatial configurations from motion sequences and aligned annotations. A central challenge is to distinguish meaningful spatial relationships from variation caused by signer anatomy, body position, viewpoint, and recording conditions. Potential approaches include body-relative spatial representations, relational modeling of hands, body, and referential loci, spatiotemporal attention, and discourse-level memory for tracking established references. These approaches will be explored in relation to annotated Taiwan Sign Language data, rather than assuming that physical proximity or movement direction alone determines linguistic meaning.</p>
+<p>This research connects both of my long-term objectives: translation requires the interpretation of spatial reference and relationships across utterances, while sign language generation requires the establishment, maintenance, and consistent reuse of meaningful spatial locations in avatar motion. It also complements my participation as a research assistant in the funded project <em>Information Structure and Reference Tracking in Taiwan Sign Language</em>.</p>
+<figure class="spatial-research-figure">
+<a href="spatial-semantics-framework.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size spatial semantics research diagram"><img src="spatial-semantics-framework.png" width="1752" height="897" loading="lazy" decoding="async" alt="Conceptual diagram showing the establishment and tracking of spatial referents, the distinction between referential and topographic uses of signing space, and a proposed multimodal modeling framework for sign language translation and generation."/></a>
+<figcaption><strong>Figure 1. Conceptual framework for spatial semantics and reference modeling in sign language.</strong> The framework illustrates how linguistically meaningful spatial information and discourse context may be integrated into multimodal learning to support sign language translation and generation. Referential loci need not correspond to physical locations in the described situation. The illustrated gestures are schematic, not validated TSL utterances; the modeling framework represents an ongoing research direction rather than a validated implementation. Linguistic annotations may support training where available.<br/><a class="figure-link" href="spatial-semantics-framework.png" target="_blank" rel="noopener noreferrer">View full-size figure ↗</a></figcaption>
+</figure>
+<p class="project-keywords">Spatial semantics · Referential loci · Spatial reference tracking · Relational representation learning · Discourse modeling · Spatially grounded motion generation</p>
+<p class="project-status">Status: Ongoing research direction; spatial modeling approaches and evaluation protocols are under investigation.</p>
+</article>
 <article class="project" id="translation">
 <h3>Discourse-Level Sign Language Translation</h3>
 <p>My translation research aims to move beyond isolated lexical recognition toward producing coherent written Chinese from continuous TSL utterances and discourse. Sign languages have their own linguistic structures; translating individual recognized signs into Chinese words is insufficient to preserve meaning, grammatical relations, and context.</p>
-<p>I am investigating approaches that integrate visual motion representations with linguistic annotations and contextual information, including gloss sequences, semantic roles, and discourse reference. A key direction is to explore natural language processing and large language models (LLMs) for context-aware translation, including both intermediate linguistic representations and more direct multimodal approaches. Important questions include how to preserve meaning across signed passages, handle ambiguous or incomplete visual evidence, and avoid generating unsupported content.</p>
+<p>I am investigating approaches that integrate visual motion representations with linguistic annotations and contextual information, including gloss sequences, semantic roles, spatially grounded referential loci, and discourse reference. A key direction is to explore natural language processing and large language models (LLMs) for context-aware translation, including both intermediate linguistic representations and more direct multimodal approaches. Important questions include how to preserve meaning across signed passages, handle ambiguous or incomplete visual evidence, and avoid generating unsupported content.</p>
 <p class="project-keywords">Sign language translation · Natural language processing · Large language models · Discourse context · Multimodal learning</p>
 <p class="project-status">Status: Research direction in development; an end-to-end discourse translation system has not yet been established.</p>
 </article>
 <article class="project" id="avatar-modeling">
 <h3>Sign Language Generation and Avatar Motion Synthesis</h3>
 <p>My generation research explores how learned skeletal motion sequences can be used to drive articulated digital characters. I am developing experimental workflows that transfer captured or reconstructed signing movements to avatars, with an emphasis on preserving linguistically meaningful hand articulations, palm orientation, body motion, and coordinated two-handed signing.</p>
-<p>Two central challenges are recovering motion that is partially hidden during capture and reconstructing three-dimensional movement from monocular two-dimensional observations. A single frontal video may not uniquely determine joint depth, hand ordering, or out-of-plane rotation. I am exploring temporal motion priors, kinematic constraints, and pose reconstruction to infer plausible three-dimensional configurations and retarget them to 2.5D or 3D characters without introducing anatomically implausible movements or losing important signing details.</p>
+<p>Two central challenges are recovering motion that is partially hidden during capture and reconstructing three-dimensional movement from monocular two-dimensional observations. A single frontal video may not uniquely determine joint depth, hand ordering, or out-of-plane rotation. I am exploring temporal motion priors, kinematic constraints, and pose reconstruction to infer plausible three-dimensional configurations and retarget them to 2.5D or 3D characters without introducing anatomically implausible movements or losing important signing details. Beyond geometric fidelity, generation must also preserve linguistically meaningful spatial relationships and the consistent use of referential loci across a sequence.</p>
 <p>In the longer term, I aim to investigate language-conditioned motion generation, in which written Chinese or structured linguistic representations guide the synthesis of meaningful signing sequences. This extends beyond replaying recorded motion and requires modeling the relationship between linguistic content, temporal structure, and visual expression.</p>
 <p class="project-keywords">Skeletal motion learning · Monocular 3D pose reconstruction · Motion retargeting · Avatar animation · Sign language generation</p>
 <p class="project-status">Status: Ongoing motion reconstruction and avatar prototype research; language-conditioned synthesis is a longer-term objective.</p>
@@ -99,9 +120,10 @@
 <p>My research draws on annotated TSL corpora, temporal landmark sequences, and collaboration with language specialists. The evaluation framework below outlines the questions and criteria I aim to investigate across the different stages of the research.</p>
 <div class="stack tsl-evaluation">
 <div><h3>Motion Capture and Reconstruction</h3><ul class="small-list"><li>Landmark accuracy and temporal consistency</li><li>Recovery of occluded fingers and overlapping hands</li><li>Anatomical plausibility and preservation of linguistic handshape</li></ul></div>
+<div><h3>Spatial Semantics and Reference Modeling</h3><ul class="small-list"><li>Preservation of linguistically relevant relative spatial relations across signers and recording conditions</li><li>Identification and tracking of annotated discourse referents and spatial loci where available</li><li>Consistency of spatial reference across utterances and generated signing sequences</li><li>Comparative evaluation of coordinate-only and spatially grounded representations</li></ul></div>
 <div><h3>Recognition and Translation</h3><ul class="small-list"><li>Top-1 and Top-5 accuracy for isolated-sign recognition</li><li>Generalization across signers and recording conditions</li><li>Translation adequacy, contextual coherence, and preservation of meaning</li></ul></div>
 <div><h3>Avatar Motion Generation</h3><ul class="small-list"><li>Motion fidelity and temporal continuity</li><li>Handshape, palm orientation, and two-hand spatial consistency</li><li>Intelligibility and linguistic fidelity assessed with signing expertise</li></ul></div>
-<div><h3>Linguistic and Multimodal Data</h3><ul class="small-list"><li>Alignment of ELAN annotations with visual representations</li><li>Semantic roles and discourse reference</li><li>Comparative evaluation of visual and linguistic feature representations</li></ul></div>
+<div><h3>Linguistic and Multimodal Data</h3><ul class="small-list"><li>Alignment of ELAN annotations with visual representations</li><li>Semantic roles, spatial relations, and discourse reference</li><li>Comparative evaluation of visual and linguistic feature representations</li></ul></div>
 </div>
 </section>
 <section aria-labelledby="recognition-heading" class="content-section recognition-section" id="recognition-demo">
