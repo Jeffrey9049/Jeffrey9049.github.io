@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Research in Taiwan Sign Language, accessible AI tools, and interdisciplinary collaboration by Lan-Jun Jeffrey Chang." name="description"/>
+<meta content="Research on Taiwan Sign Language translation and generation, occlusion-aware motion capture, discourse-level language modeling, and avatar motion synthesis by Lan-Jun Jeffrey Chang." name="description"/>
 <meta content="#ffffff" name="theme-color"/>
 <title>Sign Language | Lan-Jun Jeffrey Chang</title>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -12,7 +12,20 @@
 <!-- Cloudflare Web Analytics -->
 <script data-cf-beacon='{"token":"f5f87599f31e4d71a6280b4d701c4378"}' src="https://static.cloudflareinsights.com/beacon.min.js" type="module"></script>
 <!-- End Cloudflare Web Analytics -->
-</head>
+<style>
+.tsl-framework{max-width:810px;margin:28px 0 8px;padding:24px;border:1px solid var(--line);background:#f8fafc}
+.tsl-framework figcaption{font:500 1.12rem Georgia,"Times New Roman",serif;color:#22364b;margin:0 0 20px}
+.tsl-flow-shared{display:flex;flex-direction:column;align-items:center}
+.tsl-flow-node{width:100%;box-sizing:border-box;max-width:550px;border:1px solid #cbd5df;background:#fff;padding:13px 11px;text-align:center;color:#26384b;display:flex;flex-direction:column;gap:5px;min-width:0}
+.tsl-flow-node strong{font-size:.96rem;line-height:1.4}.tsl-flow-node span{font-size:.8rem;line-height:1.45;color:#506171;overflow-wrap:anywhere}
+.tsl-flow-arrow{display:block;text-align:center;color:#536c84;font-size:1.25rem;line-height:1.4;margin:3px 0}
+.tsl-flow-branches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:660px;margin:0 auto}
+.tsl-flow-branch{display:flex;flex-direction:column;align-items:center;min-width:0}.tsl-flow-branch .tsl-flow-node{flex:1}
+.tsl-flow-end{border-color:#8ba3bd;background:#edf3fa}
+.tsl-framework .tsl-framework-note{margin:16px 0 0;color:var(--muted);font-size:.8rem;line-height:1.6}
+.tsl-evaluation{row-gap:24px}.tsl-evaluation h3{font-size:1.08rem}.tsl-evaluation ul{margin-bottom:0}
+@media(max-width:500px){.tsl-framework{padding:15px 10px}.tsl-flow-branches{gap:8px}.tsl-flow-node{padding:10px 6px}.tsl-flow-node strong{font-size:.8rem}.tsl-flow-node span{font-size:.72rem}}
+</style></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
@@ -27,20 +40,70 @@
 </nav>
 </div>
 </header>
-<main class="container" id="main">
-<section class="page-intro">
+<main class="container" id="main"><section class="page-intro">
 <h1>Sign Language</h1>
-<p class="summary">Taiwan Sign Language research, multimodal machine learning, and accessible tools for language researchers and educators.</p>
+<p class="summary">Taiwan Sign Language understanding, translation, and generation through computer vision, multimodal machine learning, and language modeling.</p>
 </section>
-<section class="content-section mission-section">
-<h2>Motivation</h2>
-<p>My work aims to bridge the gap between sign language expertise and artificial intelligence. Sign language researchers and practitioners often have deep linguistic knowledge but may not have the programming background or technical resources needed to use machine learning systems. Conversely, AI developers may be unfamiliar with the linguistic and cultural knowledge essential to working responsibly with sign languages.</p>
-<p>I seek to connect these fields by developing approachable tools and research workflows that help sign language specialists, educators, and members of signing communities work with technology. My goal is not only to improve computational methods for sign language research, but also to make those methods more accessible to people without programming experience.</p>
-</section>
-<figure class="teaching-photo">
-<img alt="Hands-on teaching session introducing machine learning tools for sign language research, with a software demonstration on two screens" decoding="async" height="1152" loading="eager" src="tsl-ml-teaching.png" width="1536"/>
-<figcaption>Hands-on instruction in machine learning and AI tools for Taiwan Sign Language research at National Chung Cheng University.</figcaption>
+<section aria-labelledby="overview-heading" class="content-section" id="research-overview">
+<h2 id="overview-heading">Research Overview</h2>
+<p>My long-term research focuses on two complementary problems: <strong>translating Taiwan Sign Language (TSL) into written Chinese</strong> and <strong>generating linguistically meaningful signing through digital avatars</strong>. These problems require an understanding of both the visual dynamics of signing and the linguistic structure that gives those movements meaning.</p>
+<p>At the Graduate Institute of Linguistics, National Chung Cheng University, I work on annotated TSL corpora, multimodal representations, and machine learning. My current research investigates robust motion capture, occlusion-aware pose reconstruction, discourse-level language modeling, and skeletal motion generation. I view isolated sign recognition as a foundation for broader language understanding rather than as the final translation task.</p>
+<figure aria-labelledby="framework-title" class="tsl-framework">
+<figcaption id="framework-title">Research framework</figcaption>
+<div class="tsl-flow-shared">
+<div class="tsl-flow-node"><strong>Signing video and annotated corpora</strong><span>Visual observations · Linguistic annotations</span></div>
+<span aria-hidden="true" class="tsl-flow-arrow">↓</span>
+<div class="tsl-flow-node"><strong>Motion capture and representation learning</strong><span>Pose estimation · Occlusion-aware reconstruction · Temporal and linguistic features</span></div>
+</div>
+<div class="tsl-flow-branches">
+<div class="tsl-flow-branch"><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node"><strong>Sign language understanding</strong><span>Recognition · Context and discourse modeling</span></div><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node tsl-flow-end"><strong>TSL-to-Chinese translation</strong><span>Written Chinese</span></div></div>
+<div class="tsl-flow-branch"><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node"><strong>Motion learning and synthesis</strong><span>Skeletal sequences · 2D-to-3D reconstruction</span></div><span aria-hidden="true" class="tsl-flow-arrow">↓</span><div class="tsl-flow-node tsl-flow-end"><strong>Sign language generation</strong><span>Avatar animation; text conditioning as a future direction</span></div></div>
+</div>
+<p class="tsl-framework-note">Conceptual research directions, not an implemented end-to-end system. Both directions draw on learned motion representations and linguistic annotations; text-conditioned generation is a longer-term objective.</p>
 </figure>
+</section>
+<section class="content-section" id="current-research">
+<h2>Research Directions</h2>
+<article class="project" id="motion-capture">
+<h3>Robust Motion Capture and Occlusion-Aware Hand Pose Estimation</h3>
+<p>Accurate motion capture is critical for both sign language recognition and generation. Small differences in handshape, finger articulation, palm orientation, location, and movement can change the linguistic interpretation of a sign. Conventional landmark estimation can become unreliable when hands overlap, fingers are self-occluded, or a hand passes behind the body.</p>
+<p>I investigate how temporal context, anatomical constraints, and complementary pose observations can improve the reliability of landmark sequences and support inference of partially observed hand configurations. Rather than treating missing landmarks as arbitrary interpolation targets, the goal is to reconstruct plausible, temporally consistent motions while accounting for uncertainty when the visual evidence is insufficient.</p>
+<p class="project-keywords">Computer vision · Hand pose estimation · Temporal modeling · Occlusion-aware reconstruction</p>
+<p class="project-status">Status: Ongoing research and prototype exploration.</p>
+</article>
+<article class="project" id="recognition">
+<h3>Linguistically Informed Sign Language Recognition</h3>
+<p>My recognition research investigates how spatiotemporal landmarks and linguistic annotations can be combined to distinguish signed lexical items. Existing offline experiments use bidirectional GRU models to compare landmark-only representations with representations incorporating aligned ELAN annotations, including handshape, palm orientation, location, and movement.</p>
+<p>Building on these experiments, I am exploring feature-specific representations, attention mechanisms, and multi-task learning to investigate whether linguistic structure improves recognition of visually similar signs and generalization across signers. The current isolated-sign recognition workflow serves as an experimental foundation for future continuous-sign understanding.</p>
+<p class="project-keywords">Spatiotemporal representation learning · BiGRU · Transformers (exploratory) · ELAN · Multimodal learning</p>
+<p class="project-status">Status: Existing baseline experiments; further modeling and evaluation are ongoing.</p>
+</article>
+<article class="project" id="translation">
+<h3>Discourse-Level Sign Language Translation</h3>
+<p>My translation research aims to move beyond isolated lexical recognition toward producing coherent written Chinese from continuous TSL utterances and discourse. Sign languages have their own linguistic structures; translating individual recognized signs into Chinese words is insufficient to preserve meaning, grammatical relations, and context.</p>
+<p>I am investigating approaches that integrate visual motion representations with linguistic annotations and contextual information, including gloss sequences, semantic roles, and discourse reference. A key direction is to explore natural language processing and large language models (LLMs) for context-aware translation, including both intermediate linguistic representations and more direct multimodal approaches. Important questions include how to preserve meaning across signed passages, handle ambiguous or incomplete visual evidence, and avoid generating unsupported content.</p>
+<p class="project-keywords">Sign language translation · Natural language processing · Large language models · Discourse context · Multimodal learning</p>
+<p class="project-status">Status: Research direction in development; an end-to-end discourse translation system has not yet been established.</p>
+</article>
+<article class="project" id="avatar-modeling">
+<h3>Sign Language Generation and Avatar Motion Synthesis</h3>
+<p>My generation research explores how learned skeletal motion sequences can be used to drive articulated digital characters. I am developing experimental workflows that transfer captured or reconstructed signing movements to avatars, with an emphasis on preserving linguistically meaningful hand articulations, palm orientation, body motion, and coordinated two-handed signing.</p>
+<p>Two central challenges are recovering motion that is partially hidden during capture and reconstructing three-dimensional movement from monocular two-dimensional observations. A single frontal video may not uniquely determine joint depth, hand ordering, or out-of-plane rotation. I am exploring temporal motion priors, kinematic constraints, and pose reconstruction to infer plausible three-dimensional configurations and retarget them to 2.5D or 3D characters without introducing anatomically implausible movements or losing important signing details.</p>
+<p>In the longer term, I aim to investigate language-conditioned motion generation, in which written Chinese or structured linguistic representations guide the synthesis of meaningful signing sequences. This extends beyond replaying recorded motion and requires modeling the relationship between linguistic content, temporal structure, and visual expression.</p>
+<p class="project-keywords">Skeletal motion learning · Monocular 3D pose reconstruction · Motion retargeting · Avatar animation · Sign language generation</p>
+<p class="project-status">Status: Ongoing motion reconstruction and avatar prototype research; language-conditioned synthesis is a longer-term objective.</p>
+</article>
+</section>
+<section class="content-section" id="evaluation">
+<h2>Research Methodology and Evaluation</h2>
+<p>My research draws on annotated TSL corpora, temporal landmark sequences, and collaboration with language specialists. The evaluation framework below outlines the questions and criteria I aim to investigate across the different stages of the research.</p>
+<div class="stack tsl-evaluation">
+<div><h3>Motion Capture and Reconstruction</h3><ul class="small-list"><li>Landmark accuracy and temporal consistency</li><li>Recovery of occluded fingers and overlapping hands</li><li>Anatomical plausibility and preservation of linguistic handshape</li></ul></div>
+<div><h3>Recognition and Translation</h3><ul class="small-list"><li>Top-1 and Top-5 accuracy for isolated-sign recognition</li><li>Generalization across signers and recording conditions</li><li>Translation adequacy, contextual coherence, and preservation of meaning</li></ul></div>
+<div><h3>Avatar Motion Generation</h3><ul class="small-list"><li>Motion fidelity and temporal continuity</li><li>Handshape, palm orientation, and two-hand spatial consistency</li><li>Intelligibility and linguistic fidelity assessed with signing expertise</li></ul></div>
+<div><h3>Linguistic and Multimodal Data</h3><ul class="small-list"><li>Alignment of ELAN annotations with visual representations</li><li>Semantic roles and discourse reference</li><li>Comparative evaluation of visual and linguistic feature representations</li></ul></div>
+</div>
+</section>
 <section aria-labelledby="recognition-heading" class="content-section recognition-section" id="recognition-demo">
 <h2 id="recognition-heading">Online Recognition System</h2>
 <div class="recognition-feature">
@@ -48,7 +111,7 @@
 <p class="tool-type">Interactive research demonstration</p>
 <h3>Taiwan Sign Language Recognition</h3>
 <p>A browser-based research system for exploring isolated Taiwan Sign Language recognition using motion landmarks and machine learning. The interactive demonstration allows visitors to try the recognition workflow and examine ranked prediction results.</p>
-<p class="recognition-context">This system complements my work on linguistic annotation, landmark-based modeling, and accessible AI for sign language research. It is an experimental research demonstration, not a substitute for human signing expertise or a general-purpose sign language interpreter.</p>
+<p class="recognition-context">This demonstration focuses on isolated lexical recognition and ranked predictions. It provides a practical way to explore landmark-based recognition, not continuous-sign translation or a general-purpose sign language interpreter.</p>
 <div aria-label="Recognition system methods" class="recognition-meta">
 <span>Landmark-based recognition</span>
 <span>Browser-based demo</span>
@@ -60,8 +123,14 @@
 <p class="recognition-external-note">Opens the online demonstration in a new tab.</p>
 </div>
 </div>
-</section>
-<section class="content-section software-section" id="software">
+</section><section class="content-section mission-section">
+<h2>Interdisciplinary Collaboration and Accessibility</h2>
+<p>My work seeks to bridge sign language linguistics and artificial intelligence. Linguists and signing communities bring essential knowledge of language structure, expression, and meaning, while AI and computer vision provide computational methods for analyzing and modeling signing. Effective interdisciplinary research depends on integrating these forms of expertise.</p>
+<p>I develop accessible research tools and teach practical AI methods to enable sign language researchers, educators, and practitioners to participate in computational research without requiring programming experience or specialized computing hardware. This work complements the broader scientific goal of building linguistically informed and useful sign language technologies.</p>
+</section><figure class="teaching-photo">
+<img alt="Hands-on teaching session introducing machine learning tools for sign language research, with a software demonstration on two screens" decoding="async" height="1152" loading="eager" src="tsl-ml-teaching.png" width="1536"/>
+<figcaption>Hands-on instruction in machine learning and AI tools for Taiwan Sign Language research at National Chung Cheng University.</figcaption>
+</figure><section class="content-section software-section" id="software">
 <h2>Software</h2>
 <p>As part of my work to connect sign language research and AI, I develop lightweight, CPU-friendly desktop tools for researchers, educators, and students who may not have a programming background. Both tools are offered for Windows and macOS in English and Traditional Chinese, with the goal of making motion analysis and introductory machine learning more accessible without requiring a dedicated graphics card.</p>
 <div class="software-grid">
@@ -87,60 +156,7 @@
 </article>
 </div>
 <p class="software-note">Both applications are designed for CPU-friendly use; processing speed varies by computer and dataset size. Windows (.exe) and macOS (.dmg) releases, along with more information, are on the <a href="software.html">Software overview</a>.</p>
-</section>
-<section class="content-section">
-<h2>Research Overview</h2>
-<p>Sign-language understanding requires information about handshape, palm orientation, location, movement, and temporal context. My research examines how these visual and linguistic dimensions can be represented in data-driven recognition models and how captured motion can be used for avatar-based reconstruction and visualization.</p>
-<p>At the Graduate Institute of Linguistics, National Chung Cheng University, I contribute to multimodal corpus processing and machine-learning-based annotation and recognition workflows.</p>
-</section>
-<section class="content-section">
-<h2>Current Work</h2>
-<div class="project">
-<h3>Landmark-Based Sign Recognition</h3>
-<p>We extract body and hand landmarks from recorded signing and use temporal sequence models to recognize signed lexical items. Existing offline experiments use a bidirectional GRU and compare landmark-only representations with approaches incorporating aligned ELAN linguistic information.</p>
-<p class="project-keywords">MediaPipe · Spatiotemporal landmarks · Bidirectional GRU · PyTorch</p>
-</div>
-<div class="project" id="avatar-modeling">
-<h3>Sign Language Avatar Modeling and Motion Reconstruction</h3>
-<p>I am developing an experimental workflow for reconstructing sign language movements from video and landmark data and transferring them to an articulated digital character. This work explores front-view avatar animation using body pose, hand landmarks, and motion-retargeting methods, including 2.5D and 3D representations.</p>
-<p>A central challenge is preserving the linguistic details of signing: accurate handshapes, finger articulation, palm orientation, coordinated movements, and the relative depth of overlapping hands. The longer-term aim is to support visual demonstrations and accessible educational materials, while studying how faithfully digital avatars can represent recorded signing.</p>
-<p class="project-keywords">Human pose estimation · Hand tracking · Motion retargeting · 2.5D/3D avatars</p>
-<p class="project-status">Status: Ongoing research and prototype development.</p>
-</div>
-<div class="project">
-<h3>Linguistically Informed Modeling</h3>
-<p>ELAN annotation tiers provide complementary descriptions of a sign, including gloss, handshape, palm orientation, location, and movement. I am interested in whether structured feature processing, attention mechanisms, and multi-task supervision improve recognition and generalization.</p>
-<p class="project-keywords">ELAN · Multimodal learning · Feature attention · Multi-task learning</p>
-</div>
-<div class="project">
-<h3>Corpus Analysis</h3>
-<p>In addition to lexical recognition, I study computational workflows for analyzing annotated Taiwan Sign Language corpora, including semantic roles, discourse reference, and relationships between linguistic labels and movement observations.</p>
-<p class="project-keywords">Corpus processing · Linguistic annotation · Semantic analysis</p>
-</div>
-</section>
-<section class="content-section">
-<h2>Methods and Evaluation</h2>
-<div class="stack">
-<div><h3>Data and Modeling</h3>
-<ul class="small-list">
-<li>Temporal landmark sequences from video</li>
-<li>Gloss-aligned ELAN annotation tiers</li>
-<li>Sequence recognition and representation learning</li>
-<li>Feature-specific and multi-task approaches</li>
-</ul>
-</div>
-<div><h3>Evaluation Questions</h3>
-<ul class="small-list">
-<li>Top-1 and Top-5 lexical accuracy</li>
-<li>Generalization across signers</li>
-<li>Visually similar sign vocabulary</li>
-<li>Robustness across recording conditions</li>
-</ul>
-</div>
-</div>
-<p class="note">Some research directions described here are ongoing or planned experiments rather than published findings. Results will be added when they are ready to share.</p>
-</section>
-</main>
+</section></main>
 <footer class="site-footer">
 <div class="container footer-inner">
 <p>© 2026 Lan-Jun Jeffrey Chang</p>
@@ -151,4 +167,3 @@
 <script defer="" src="software-buttons.js"></script>
 </body>
 </html>
-
