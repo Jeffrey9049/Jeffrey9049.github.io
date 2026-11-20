@@ -8,7 +8,7 @@
 <meta content="#ffffff" name="theme-color"/>
 <title>Sign Language | Lan-Jun Jeffrey Chang</title>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="styles.css" rel="stylesheet"/>
+<link href="styles.css?v=20261120-outreach" rel="stylesheet"/>
 <!-- Cloudflare Web Analytics -->
 <script data-cf-beacon='{"token":"f5f87599f31e4d71a6280b4d701c4378"}' src="https://static.cloudflareinsights.com/beacon.min.js" type="module"></script>
 <!-- End Cloudflare Web Analytics -->
@@ -44,12 +44,12 @@
 <a href="publications.html">Publications</a>
 <a aria-current="page" href="sign-language.html">Sign Language</a>
 <a href="software.html">Software</a>
-</nav>
+<a href="outreach.html">Outreach</a></nav>
 </div>
 </header>
 <main class="container" id="main"><section class="page-intro">
-<h1>Sign Language</h1>
-<p class="summary">Taiwan Sign Language understanding, translation, and generation through computer vision, multimodal machine learning, and language modeling.</p>
+<h1>Taiwan Sign Language Research</h1>
+<p class="summary">Understanding, translation, and generation through computer vision, multimodal learning, and language modeling.</p>
 </section>
 <section aria-labelledby="overview-heading" class="content-section" id="research-overview">
 <h2 id="overview-heading">Research Overview</h2>
@@ -93,8 +93,8 @@
 <p>I aim to investigate how models can learn the linguistic significance of spatial configurations from motion sequences and aligned annotations. A central challenge is to distinguish meaningful spatial relationships from variation caused by signer anatomy, body position, viewpoint, and recording conditions. Potential approaches include body-relative spatial representations, relational modeling of hands, body, and referential loci, spatiotemporal attention, and discourse-level memory for tracking established references. These approaches will be explored in relation to annotated Taiwan Sign Language data, rather than assuming that physical proximity or movement direction alone determines linguistic meaning.</p>
 <p>This research connects both of my long-term objectives: translation requires the interpretation of spatial reference and relationships across utterances, while sign language generation requires the establishment, maintenance, and consistent reuse of meaningful spatial locations in avatar motion. It also complements my participation as a research assistant in the funded project <em>Information Structure and Reference Tracking in Taiwan Sign Language</em>.</p>
 <figure class="spatial-research-figure">
-<a href="spatial-semantics-framework.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size spatial semantics research diagram"><img src="spatial-semantics-framework.png" width="1752" height="897" loading="lazy" decoding="async" alt="Conceptual diagram showing the establishment and tracking of spatial referents, the distinction between referential and topographic uses of signing space, and a proposed multimodal modeling framework for sign language translation and generation."/></a>
-<figcaption><strong>Figure 1. Conceptual framework for spatial semantics and reference modeling in sign language.</strong> The framework illustrates how linguistically meaningful spatial information and discourse context may be integrated into multimodal learning to support sign language translation and generation. Referential loci need not correspond to physical locations in the described situation. The illustrated gestures are schematic, not validated TSL utterances; the modeling framework represents an ongoing research direction rather than a validated implementation. Linguistic annotations may support training where available.<br/><a class="figure-link" href="spatial-semantics-framework.png" target="_blank" rel="noopener noreferrer">View full-size figure ↗</a></figcaption>
+<a aria-label="View the full-size spatial semantics research diagram" href="spatial-semantics-framework.png" rel="noopener noreferrer" target="_blank"><img alt="Conceptual diagram showing the establishment and tracking of spatial referents, the distinction between referential and topographic uses of signing space, and a proposed multimodal modeling framework for sign language translation and generation." decoding="async" height="897" loading="lazy" src="spatial-semantics-framework.png" width="1752"/></a>
+<figcaption><strong>Figure 1. Conceptual framework for spatial semantics and reference modeling in sign language.</strong> The framework illustrates how linguistically meaningful spatial information and discourse context may be integrated into multimodal learning to support sign language translation and generation. Referential loci need not correspond to physical locations in the described situation. The illustrated gestures are schematic, not validated TSL utterances; the modeling framework represents an ongoing research direction rather than a validated implementation. Linguistic annotations may support training where available.<br/><a class="figure-link" href="spatial-semantics-framework.png" rel="noopener noreferrer" target="_blank">View full-size figure ↗</a></figcaption>
 </figure>
 <p class="project-keywords">Spatial semantics · Referential loci · Spatial reference tracking · Relational representation learning · Discourse modeling · Spatially grounded motion generation</p>
 <p class="project-status">Status: Ongoing research direction; spatial modeling approaches and evaluation protocols are under investigation.</p>
@@ -145,47 +145,14 @@
 <p class="recognition-external-note">Opens the online demonstration in a new tab.</p>
 </div>
 </div>
-</section><section class="content-section mission-section">
-<h2>Interdisciplinary Collaboration and Accessibility</h2>
-<p>My work seeks to bridge sign language linguistics and artificial intelligence. Linguists and signing communities bring essential knowledge of language structure, expression, and meaning, while AI and computer vision provide computational methods for analyzing and modeling signing. Effective interdisciplinary research depends on integrating these forms of expertise.</p>
-<p>I develop accessible research tools and teach practical AI methods to enable sign language researchers, educators, and practitioners to participate in computational research without requiring programming experience or specialized computing hardware. This work complements the broader scientific goal of building linguistically informed and useful sign language technologies.</p>
-</section><figure class="teaching-photo">
-<img alt="Hands-on teaching session introducing machine learning tools for sign language research, with a software demonstration on two screens" decoding="async" height="1152" loading="eager" src="tsl-ml-teaching.png" width="1536"/>
-<figcaption>Hands-on instruction in machine learning and AI tools for Taiwan Sign Language research at National Chung Cheng University.</figcaption>
-</figure><section class="content-section software-section" id="software">
-<h2>Software</h2>
-<p>As part of my work to connect sign language research and AI, I develop lightweight, CPU-friendly desktop tools for researchers, educators, and students who may not have a programming background. Both tools are offered for Windows and macOS in English and Traditional Chinese, with the goal of making motion analysis and introductory machine learning more accessible without requiring a dedicated graphics card.</p>
-<div class="software-grid">
-<article class="software-item">
-<p class="tool-type">Video processing</p>
-<h3><a class="software-title-link" href="landmark-studio.html">Landmark Studio</a></h3>
-<p class="software-version" data-release-version="landmark">Version 1.2.0 · Windows / macOS · English / 繁體中文</p>
-<p>A lightweight, no-code tool for extracting body, hand, and facial landmarks from video, designed to work without a dedicated GPU.</p>
-<div class="software-actions">
-<a class="plain-action" href="landmark-studio.html">About the software <span aria-hidden="true">↗</span></a>
-<div aria-label="Download options by operating system and language" class="platform-download-groups"><div aria-label="Landmark Studio for Windows" class="platform-download-group" role="group"><span class="platform-label">Windows</span><div class="language-downloads"><a aria-label="Download Landmark Studio 1.2.0 for Windows in English" class="download-link" data-download-link="landmark.windows.en" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/2/SignLanguage-Landmark--1.2.0.exe" lang="en" rel="noopener noreferrer" target="_blank">English <span aria-hidden="true">↗</span></a><a aria-label="下載 Landmark Studio 1.2.0 Windows 繁體中文版" class="download-link" data-download-link="landmark.windows.zh" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/V1.1.2/Landmarkzh-1.2.0.exe" lang="zh-Hant" rel="noopener noreferrer" target="_blank">繁體中文 <span aria-hidden="true">↗</span></a></div></div><div aria-label="Landmark Studio for macOS" class="platform-download-group" role="group"><span class="platform-label">macOS</span><div class="language-downloads"><a aria-label="Download Landmark Studio 1.2.0 for macOS in English" class="download-link" data-download-link="landmark.macos.en" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/mac01/Landmark-EN-1.2.0.dmg" lang="en" rel="noopener noreferrer" target="_blank">English <span aria-hidden="true">↗</span></a><a aria-label="下載 Landmark Studio 1.2.0 macOS 繁體中文版" class="download-link" data-download-link="landmark.macos.zh" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/mac01/Landmark-ZH-1.2.0.dmg" lang="zh-Hant" rel="noopener noreferrer" target="_blank">繁體中文 <span aria-hidden="true">↗</span></a></div></div></div>
-</div>
-</article>
-<article class="software-item">
-<p class="tool-type">Machine learning</p>
-<h3><a class="software-title-link" href="ml-studio.html">Sign Language ML Studio</a></h3>
-<p class="software-version" data-release-version="ml">Windows v0.9.0 · macOS v0.8.0 · English / 繁體中文</p>
-<p>A lightweight, CPU-friendly application for exploring sign language recognition with labeled examples without writing training code or requiring a dedicated GPU.</p>
-<div class="software-actions">
-<a class="plain-action" href="ml-studio.html">About the software <span aria-hidden="true">↗</span></a>
-<div aria-label="Download options by operating system and language" class="platform-download-groups"><div aria-label="Sign Language ML Studio for Windows" class="platform-download-group" role="group"><span class="platform-label">Windows · v0.9.0</span><div class="language-downloads"><a aria-label="Download Sign Language ML Studio 0.9.0 for Windows in English" class="download-link" data-download-link="ml.windows.en" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/v0%2C4%2C1/SignLanguage-ML-0.9.0.exe" lang="en" rel="noopener noreferrer" target="_blank">English <span aria-hidden="true">↗</span></a><a aria-label="下載 Sign Language ML Studio 0.9.0 Windows 繁體中文版" class="download-link" data-download-link="ml.windows.zh" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/v0%2C4%2C1/mlzh-0.9.0.exe" lang="zh-Hant" rel="noopener noreferrer" target="_blank">繁體中文 <span aria-hidden="true">↗</span></a></div></div><div aria-label="Sign Language ML Studio for macOS" class="platform-download-group" role="group"><span class="platform-label">macOS · v0.8.0</span><div class="language-downloads"><a aria-label="Download Sign Language ML Studio 0.8.0 for macOS in English" class="download-link" data-download-link="ml.macos.en" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/mac01/ML-EN-0.8.0.dmg" lang="en" rel="noopener noreferrer" target="_blank">English <span aria-hidden="true">↗</span></a><a aria-label="下載 Sign Language ML Studio 0.8.0 macOS 繁體中文版" class="download-link" data-download-link="ml.macos.zh" href="https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/mac01/ML-ZH-0.8.0.dmg" lang="zh-Hant" rel="noopener noreferrer" target="_blank">繁體中文 <span aria-hidden="true">↗</span></a></div></div></div>
-</div>
-</article>
-</div>
-<p class="software-note">Both applications are designed for CPU-friendly use; processing speed varies by computer and dataset size. Windows (.exe) and macOS (.dmg) releases, along with more information, are on the <a href="software.html">Software overview</a>.</p>
-</section></main>
+</section><section class="content-section" id="software"><h2>Research Tools and Outreach</h2><p>Alongside my research, I develop accessible tools for motion-data processing and machine learning, and collaborate with language specialists through hands-on instruction. Explore the software and its available editions below.</p><div class="tool-mini-grid"><a class="tool-mini" href="landmark-studio.html"><img alt="" class="mini-app-icon" decoding="async" height="400" src="landmark-en.webp" width="400"/><span><strong>Landmark Studio</strong><span>Motion data · Landmark extraction</span></span><span aria-hidden="true" class="mini-arrow">↗</span></a><a class="tool-mini" href="ml-studio.html"><img alt="" class="mini-app-icon" decoding="async" height="400" src="ml-en.webp" width="400"/><span><strong>Sign Language ML Studio</strong><span>Accessible machine learning</span></span><span aria-hidden="true" class="mini-arrow">↗</span></a></div><p class="related-page-links"><a href="software.html">Software and downloads</a> <span aria-hidden="true">·</span> <a href="outreach.html">Outreach and accessibility</a></p></section></main>
 <footer class="site-footer">
 <div class="container footer-inner">
 <p>© 2026 Lan-Jun Jeffrey Chang</p>
 <a class="footer-email" href="mailto:comljchang@gmail.com">comljchang@gmail.com</a>
 </div>
 </footer>
-<script defer="" src="software-links.js?v=20261120"></script>
-<script defer="" src="software-buttons.js?v=20261120"></script>
+
+
 </body>
 </html>

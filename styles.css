@@ -252,3 +252,39 @@ h3{font-size:1.12rem;font-weight:650;letter-spacing:-.012em}
 @media(max-width:1050px){.platform-download-group{grid-template-columns:1fr;gap:7px}}
 @media(max-width:800px){.download-panel-action{width:100%}.platform-download-group{grid-template-columns:90px minmax(0,1fr);gap:12px}}
 @media(max-width:450px){.platform-download-group{grid-template-columns:1fr;gap:6px}.platform-download-group .language-downloads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.platform-download-group .download-link{min-width:0;padding:9px 5px;font-size:.78rem}}
+
+/* Outreach and software branding — original application artwork */
+.software-card-heading{display:flex;align-items:flex-start;gap:16px;width:100%;margin-bottom:15px}
+.app-icon{width:84px;height:84px;object-fit:contain;flex:none;border-radius:17%;display:block}
+.software-card-heading-text{min-width:0;flex:1}
+.software-card-heading h3{margin:0 0 9px!important}
+.software-card-heading .software-version{margin:0!important}
+.app-title-row{display:flex;align-items:flex-start;gap:26px}
+.app-title-row>.app-icon{width:120px;height:120px;margin-top:5px}
+.app-title-row>div{min-width:0;flex:1}
+.app-jump{display:inline-block;font-weight:600;font-size:.9rem;margin-top:5px}
+.download-icon{width:23px;height:23px;object-fit:contain;flex:none;border-radius:15%;display:block}
+.edition-preview{display:flex;gap:22px;flex-wrap:wrap;margin-top:17px}
+.edition-preview>span{display:flex;align-items:center;gap:9px;font-size:.81rem;color:var(--muted)}
+.edition-icon{width:39px;height:39px;object-fit:contain;border-radius:15%}
+.tool-mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0}
+.tool-mini{display:flex;align-items:center;gap:14px;padding:16px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-width:0}
+.tool-mini:hover{border-color:var(--accent);color:var(--accent)}
+.mini-app-icon{width:58px;height:58px;object-fit:contain;flex:none;border-radius:15%}
+.tool-mini>span:nth-child(2){display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}
+.tool-mini strong{font-size:.98rem;line-height:1.4}
+.tool-mini>span>span{font-size:.82rem;line-height:1.45;color:var(--muted)}
+.mini-arrow{color:var(--accent);flex:none}
+.related-page-links{font-size:.93rem;display:flex;gap:12px;flex-wrap:wrap}
+.outreach-teaching{display:grid;grid-template-columns:1.15fr 1fr;gap:32px;align-items:start}
+.outreach-teaching .teaching-photo{margin:0;max-width:none}
+.outreach-teaching .teaching-photo img{width:100%;height:auto}
+.outreach-teaching h3{margin-top:0}
+.outreach-meta{font-size:.88rem;color:var(--muted)!important}
+.accessibility-principles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin:22px 0;border-top:1px solid var(--line)}
+.accessibility-principles>div{border-bottom:1px solid var(--line);padding:18px 0}
+.accessibility-principles h3{margin:0 0 7px}
+.accessibility-principles p{margin:0;font-size:.94rem}
+@media(max-width:900px){.site-nav{column-gap:16px}.header-inner{gap:16px}}
+@media(max-width:690px){.app-title-row{gap:15px}.app-title-row>.app-icon{width:76px;height:76px}.app-title-row h1{font-size:clamp(1.85rem,7vw,2.55rem)}.tool-mini-grid,.outreach-teaching{grid-template-columns:1fr;gap:17px}.outreach-teaching .teaching-photo{margin:0}.software-card-heading .app-icon{width:70px;height:70px}.outreach-teaching h3{margin-top:0}}
+@media(max-width:450px){.accessibility-principles{grid-template-columns:1fr}.download-icon{width:19px;height:19px}.platform-download-group .download-link{gap:4px}.edition-preview{gap:12px}.app-title-row{gap:12px}}
