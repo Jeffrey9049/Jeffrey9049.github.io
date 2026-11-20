@@ -5,14 +5,14 @@
  */
 window.SCHOLAR_SOFTWARE_RELEASES = {
   "landmark": {
-    "version": "1.2.0",
     "windows": {
       "en": {
         "url": "https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/2/SignLanguage-Landmark--1.2.0.exe"
       },
       "zh": {
         "url": "https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/V1.1.2/Landmarkzh-1.2.0.exe"
-      }
+      },
+      "version": "1.2.0"
     },
     "macos": {
       "en": {
@@ -20,18 +20,19 @@ window.SCHOLAR_SOFTWARE_RELEASES = {
       },
       "zh": {
         "url": "https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/mac01/Landmark-ZH-1.2.0.dmg"
-      }
+      },
+      "version": "1.2.0"
     }
   },
   "ml": {
-    "version": "0.8.0",
     "windows": {
       "en": {
-        "url": "https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/1/SignLanguage-ML-0.8.0.exe"
+        "url": "https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/v0%2C4%2C1/SignLanguage-ML-0.9.0.exe"
       },
       "zh": {
-        "url": "https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/v0%2C4%2C1/mlzh-0.8.0.exe"
-      }
+        "url": "https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/v0%2C4%2C1/mlzh-0.9.0.exe"
+      },
+      "version": "0.9.0"
     },
     "macos": {
       "en": {
@@ -39,7 +40,8 @@ window.SCHOLAR_SOFTWARE_RELEASES = {
       },
       "zh": {
         "url": "https://github.com/Jeffrey9049/Jeffrey9049.github.io/releases/download/mac01/ML-ZH-0.8.0.dmg"
-      }
+      },
+      "version": "0.8.0"
     }
   }
 };

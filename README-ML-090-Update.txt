@@ -1,0 +1,1 @@
+Upload the included files to your existing GitHub Pages repository root. Windows ML Studio is now 0.9.0; macOS remains 0.8.0. Landmark Studio remains 1.2.0. The homepage biography and research interests are updated. The spatial-semantics figure is included to preserve the latest Sign Language page. External downloads and live deployment are not tested here.

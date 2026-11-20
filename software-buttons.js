@@ -17,7 +17,12 @@
   });
   document.querySelectorAll("[data-release-version]").forEach(function (element) {
     var release = releases[element.getAttribute("data-release-version")];
-    if (release && release.version)
-      element.textContent = "Version " + release.version + " · Windows / macOS · English / 繁體中文";
+    if (!release || !release.windows || !release.macos) return;
+    var win = release.windows.version, mac = release.macos.version;
+    if (win && mac) {
+      element.textContent = win === mac
+        ? "Version " + win + " · Windows / macOS · English / 繁體中文"
+        : "Windows v" + win + " · macOS v" + mac + " · English / 繁體中文";
+    }
   });
 })();
